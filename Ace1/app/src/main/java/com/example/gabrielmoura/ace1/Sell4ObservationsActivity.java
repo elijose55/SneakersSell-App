@@ -10,7 +10,7 @@ import android.widget.Switch;
 public class Sell4ObservationsActivity extends AppCompatActivity {
 
     private void openCameraActivity() {
-        Intent intent = new Intent(this, CameraActivity.class);
+        Intent intent = new Intent(this, Sell5CameraActivity.class);
         startActivity(intent);
         finish();
     }

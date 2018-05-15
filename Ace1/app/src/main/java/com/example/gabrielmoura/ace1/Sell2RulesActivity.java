@@ -17,7 +17,7 @@ public class Sell2RulesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_Sell2Rules);
+        setContentView(R.layout.activity_sell2rules);
         Button accept= (Button) findViewById(R.id.AcceptTermsButton);
 
         accept.setOnClickListener(new View.OnClickListener() {

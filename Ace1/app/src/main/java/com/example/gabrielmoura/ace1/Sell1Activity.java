@@ -1,6 +1,5 @@
 package com.example.gabrielmoura.ace1;
 
-import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -19,7 +18,7 @@ public class Sell1Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_Sell1);
+        setContentView(R.layout.activity_sell1);
 
         ImageButton info1= (ImageButton) findViewById(R.id.InfoButton1);
         ImageButton info2= (ImageButton) findViewById(R.id.InfoButton2);

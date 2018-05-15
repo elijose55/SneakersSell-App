@@ -20,7 +20,8 @@
         <activity android:name=".Sell2RulesActivity" />
         <activity android:name=".Sell3Activity" />
         <activity android:name=".Sell4ObservationsActivity" />
-        <activity android:name=".CameraActivity"></activity>
+        <activity android:name=".Sell5CameraActivity" />
+        <activity android:name=".Sell6ReviewActivity"></activity>
     </application>
 
 </manifest>

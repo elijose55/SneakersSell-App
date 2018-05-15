@@ -22,7 +22,7 @@
         android:inputType="textPersonName"
         android:selectAllOnFocus="false"
         android:singleLine="false"
-        android:text="Bem-Vindo á ACE1"
+        android:text="Bem Vindo a ACE1"
         tools:layout_editor_absoluteX="106dp"
         tools:layout_editor_absoluteY="47dp" />
 

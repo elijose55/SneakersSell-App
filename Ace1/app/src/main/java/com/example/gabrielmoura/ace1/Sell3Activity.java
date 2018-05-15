@@ -28,9 +28,8 @@ public class Sell3Activity extends AppCompatActivity {
     }
 
     public void openSell4ObservationActivity() {
-        Intent intent4 = new Intent(this, Sell4ObservationsActivity);
+        Intent intent4 = new Intent(this, Sell4ObservationsActivity.class);
         startActivity(intent4);
-        finishActivity();
         return;
     };
 
