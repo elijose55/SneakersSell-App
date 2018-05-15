@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+
 public class Sell3Activity extends AppCompatActivity {
 
 
@@ -15,7 +16,6 @@ public class Sell3Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sell3);
-
 
         Button Prosseguir = (Button) findViewById(R.id.NextButton);
 
@@ -28,7 +28,7 @@ public class Sell3Activity extends AppCompatActivity {
     }
 
     public void openSell4ObservationActivity() {
-        Intent intent4 = new Intent(this, Sell4ObservationActivity);
+        Intent intent4 = new Intent(this, Sell4ObservationsActivity);
         startActivity(intent4);
         finishActivity();
         return;
@@ -37,7 +37,7 @@ public class Sell3Activity extends AppCompatActivity {
 
     @Override
     public void onBackPressed(){ //Botão BACK padrão do android
-        startActivity(new Intent(this, Sell2RulesAcivity.class)); //O efeito ao ser pressionado do botão (no caso abre a activity)
+        startActivity(new Intent(this, Sell2RulesActivity.class)); //O efeito ao ser pressionado do botão (no caso abre a activity)
         finishAffinity(); //Método para matar a activity e não deixa-lá indexada na pilhagem
         return;
     }

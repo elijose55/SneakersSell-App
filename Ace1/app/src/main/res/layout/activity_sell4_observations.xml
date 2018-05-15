@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Sell4ObservationsActivity">
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="PROSSEGUIR"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="427dp" />
+
+    <Switch
+        android:id="@+id/Switch1"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:text="Dano Palmilha E"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="319dp" />
+
+    <Switch
+        android:id="@+id/Switch2"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:text="Dano na Caixa"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <Switch
+        android:id="@+id/Switch3"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:text="Mancha Solado D"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="201dp" />
+
+    <Switch
+        android:id="@+id/Switch4"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="Mancha Solado E"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="242dp" />
+
+    <Switch
+        android:id="@+id/Switch5"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="Possui Caixa"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="123dp" />
+
+    <Switch
+        android:id="@+id/Switch6"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:text="Dano Palmilha E"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="279dp" />
+
+    <Switch
+        android:id="@+id/Switch7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mancha Exterior D"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+    <Switch
+        android:id="@+id/Switch8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mancha Exterior E"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="402dp" />
+</android.support.constraint.ConstraintLayout>

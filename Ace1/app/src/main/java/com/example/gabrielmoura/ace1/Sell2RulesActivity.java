@@ -6,10 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Sell_RulesActivity extends AppCompatActivity {
+public class Sell2RulesActivity extends AppCompatActivity {
 
     private void openSell3() {
-        Intent intent = new Intent(this, Sell3.class);
+        Intent intent = new Intent(this, Sell3Activity.class);
         startActivity(intent);
         finish();
     }
@@ -17,7 +17,7 @@ public class Sell_RulesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.SellRules);
+        setContentView(R.layout.activity_Sell2Rules);
         Button accept= (Button) findViewById(R.id.AcceptTermsButton);
 
         accept.setOnClickListener(new View.OnClickListener() {
@@ -25,7 +25,7 @@ public class Sell_RulesActivity extends AppCompatActivity {
             public void onClick(View v) {
                 openSell3();
             }
-        }
+        });
     }
     @Override
     public void onBackPressed(){ //Botão BACK padrão do android
@@ -33,5 +33,5 @@ public class Sell_RulesActivity extends AppCompatActivity {
         finishAffinity(); //Método para matar a activity e não deixa-lá indexada na pilhagem
         return;
     }
-    }
 }
+

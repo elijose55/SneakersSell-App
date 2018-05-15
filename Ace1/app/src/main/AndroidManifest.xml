@@ -17,8 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Sell1Activity" />
-        <activity android:name=".Sell_RulesActivity" />
-        <activity android:name=".Sell3Activity"></activity>
+        <activity android:name=".Sell2RulesActivity" />
+        <activity android:name=".Sell3Activity" />
+        <activity android:name=".Sell4ObservationsActivity" />
+        <activity android:name=".CameraActivity"></activity>
     </application>
 
 </manifest>
