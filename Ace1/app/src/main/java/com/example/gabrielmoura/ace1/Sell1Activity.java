@@ -1,15 +1,17 @@
 package com.example.gabrielmoura.ace1;
 
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
+import android.widget.ImageButton;
 
 public class Sell1Activity extends AppCompatActivity {
 
-    private void openSell_RulesActivity() {
-        Intent intent = new Intent(this, Sell_RulesActivity.class);
+    private void openSell2RulesActivity() {
+        Intent intent = new Intent(this, Sell2RulesActivity.class);
         startActivity(intent);
         finish();
     }
@@ -17,21 +19,21 @@ public class Sell1Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.Sell1);
+        setContentView(R.layout.activity_Sell1);
 
-        Button info1= (Button) findViewById(R.id.InfoButton1);
-        Button info2= (Button) findViewById(R.id.InfoButton2);
-        Button info3= (Button) findViewById(R.id.InfoButton3);
-        Button info4= (Button) findViewById(R.id.InfoButton4);
-        Button info5= (Button) findViewById(R.id.InfoButton5);
+        ImageButton info1= (ImageButton) findViewById(R.id.InfoButton1);
+        ImageButton info2= (ImageButton) findViewById(R.id.InfoButton2);
+        ImageButton info3= (ImageButton) findViewById(R.id.InfoButton3);
+        ImageButton info4= (ImageButton) findViewById(R.id.InfoButton4);
+        ImageButton info5= (ImageButton) findViewById(R.id.InfoButton5);
         Button next= (Button) findViewById(R.id.NextButton);
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openSell_RulesActivity();
+                openSell2RulesActivity();
             }
-        }
+        });
     }
     @Override
     public void onBackPressed(){ //Botão BACK padrão do android

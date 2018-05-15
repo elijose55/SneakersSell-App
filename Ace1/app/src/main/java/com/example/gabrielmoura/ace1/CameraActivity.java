@@ -2,15 +2,12 @@ package com.example.gabrielmoura.ace1;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ImageButton;
-import android.widget.Switch;
 
-public class Sell3Activity extends AppCompatActivity {
+public class CameraActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sell3);
-
+        setContentView(R.layout.activity_camera);
     }
 }
