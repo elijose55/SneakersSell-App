@@ -17,7 +17,7 @@ public class Sell1Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_buy);
+        setContentView(R.layout.Sell1);
 
         Button info1= (Button) findViewById(R.id.InfoButton1);
         Button info2= (Button) findViewById(R.id.InfoButton2);
