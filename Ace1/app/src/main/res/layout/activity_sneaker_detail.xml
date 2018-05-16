@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sneaker_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gabrielmoura.ace1.sneaker_detail">
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="175dp"
+        android:layout_height="64dp"
+        android:text="Usado"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="368dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:text='Yeezy Boost "Beluga" V2.0'
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="176dp"
+        android:layout_height="64dp"
+        android:text="Novo"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="192dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A partir de R$1500"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="462dp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A partir de R$2000"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="462dp" />
+
+
+</android.support.constraint.ConstraintLayout>
