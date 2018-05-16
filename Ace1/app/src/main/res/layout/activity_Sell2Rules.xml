@@ -9,26 +9,61 @@
     <CheckBox
         android:id="@+id/AcceptTermsButton"
         android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginEnd="100dp"
-        android:text="Eu li e aceito os termos"
+        android:layout_height="65dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="164dp"
         android:checked="false"
+        android:text="Eu li e aceito os termos"
+        android:onClick="onCheckboxClicked"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="172dp"
-        android:layout_height="102dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:selectAllOnFocus="false"
-        android:singleLine="false"
-        android:text="Bem Vindo a ACE1"
+    <TextView
+        android:id="@+id/Apresentation"
+        android:layout_width="357dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="14dp"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Bem-vindo à melhor plataforma para vender seus sneakers" />
+
+    <ImageButton
+        android:id="@+id/NextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/botao_frente" />
+
+    <ScrollView
+        android:id="@+id/Scroll"
+        android:layout_width="368dp"
+        android:layout_height="418dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/Regras"
+        android:layout_width="304dp"
+        android:layout_height="386dp"
+        android:layout_marginBottom="116dp"
+        android:layout_marginStart="40dp"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere faucibus diam. Proin sed turpis vitae elit elementum convallis. Fusce quam justo, ultricies quis urna id, placerat rutrum mauris. Praesent faucibus tempus porttitor. Donec in efficitur nisl. In hac habitasse platea dictumst. Vivamus suscipit justo vitae ornare pharetra. Suspendisse cursus tincidunt felis sed gravida. Donec vehicula ante ut orci tristique euismod. Donec vestibulum, purus ut interdum consectetur, nisl purus lacinia ex, ac convallis elit justo ac mauris. Curabitur magna metus, viverra in nisl vel, finibus sagittis massa. Quisque egestas orci ac maximus iaculis. Cras scelerisque tortor felis, non vestibulum lorem hendrerit sit amet. Suspendisse laoreet sit amet mi eu condimentum. Suspendisse iaculis cursus turpis, et suscipit augue sollicitudin quis.  Proin posuere sem vel nulla iaculis, at blandit ante sodales. Suspendisse in tincidunt enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla varius eros venenatis, sollicitudin ipsum sit amet, vehicula mauris. Curabitur nec ante vitae quam vehicula auctor. Duis quis vehicula quam. Nullam ligula tellus, pulvinar eget augue vel, suscipit efficitur sem. Sed vitae condimentum nisl. Donec urna augue, vehicula in enim sit amet, lobortis lacinia sapien. Sed vel lorem non risus accumsan feugiat dictum a dolor.  Phasellus eget justo accumsan, iaculis magna sit amet, porta nisi. Phasellus condimentum pulvinar ullamcorper. Cras imperdiet tempus mauris at ornare. Duis viverra a nisi id pretium. In ullamcorper sem dolor, in dignissim mauris condimentum nec. Etiam volutpat eleifend eros in molestie. Pellentesque eu risus dapibus, congue nisi at, congue est. Etiam egestas lobortis libero, sit amet pharetra elit sollicitudin a. Cras id lectus arcu.  Nunc suscipit porttitor nisi, sit amet cursus quam consectetur eu. Donec non libero mollis, fermentum quam molestie, consectetur lectus. Quisque posuere eros eget sagittis malesuada. Duis lobortis cursus ante, in feugiat mi vulputate et. Praesent viverra, lectus vitae pulvinar condimentum, nibh purus malesuada lorem, at tincidunt libero tellus id enim. Quisque id rutrum ligula. Etiam ac gravida neque, sit amet faucibus metus. Sed non neque blandit, volutpat risus nec, ultricies lectus. Morbi viverra aliquam fermentum. Vivamus non libero ex.  Maecenas nec lobortis justo. Nam gravida sodales tempor. Nunc varius, massa id posuere consequat, odio purus ullamcorper nisl, sed pharetra diam velit non dolor. Vivamus sed aliquam est. Donec interdum tincidunt nulla in pretium. Vivamus dapibus enim sit amet vehicula viverra. Vivamus bibendum sapien nibh, at varius dui rutrum ac. Mauris efficitur malesuada ante eu rhoncus. Sed eget metus at tellus hendrerit elementum id id lacus. Integer volutpat mi vitae arcu pellentesque, id sodales dui scelerisque. Donec tempor eu risus vitae aliquam. Morbi eu ante ut nibh porta faucibus nec at dui. Praesent ultricies turpis in felis venenatis, eget laoreet tortor ullamcorper. Donec ac sem placerat, rhoncus ipsum sit amet, accumsan magna.  Nulla porttitor metus nulla, a scelerisque dolor iaculis id. Quisque ac nibh consequat, commodo velit ut, aliquet dolor. Duis eu lectus ultrices, congue urna at, interdum nunc. Suspendisse sit amet ipsum mollis, placerat mauris vitae, rhoncus massa. Duis sodales ut orci a accumsan. Sed vel condimentum justo. Nullam scelerisque odio sit amet dapibus semper. Maecenas id imperdiet odio, nec consectetur dolor. Suspendisse potenti. Nulla varius mauris et nunc efficitur feugiat. Aliquam malesuada nisi a iaculis mattis.  Nullam at mauris interdum, hendrerit nunc vitae, aliquam sapien. Vivamus sit amet cursus quam, in volutpat lectus. Curabitur vitae massa in lacus auctor mattis. Etiam ullamcorper sit amet sem eget aliquam. Vivamus justo quam, tincidunt eu semper id, hendrerit vestibulum turpis. Nam et leo a nunc iaculis fermentum convallis sed metus. Duis finibus fermentum neque id suscipit." />
 
 </android.support.constraint.ConstraintLayout>

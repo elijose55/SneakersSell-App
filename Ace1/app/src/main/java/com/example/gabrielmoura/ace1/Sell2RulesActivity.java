@@ -7,34 +7,51 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.view.View.OnClickListener;
-import android.widget.Toast;
+import android.widget.ImageButton;
 
 public class Sell2RulesActivity extends AppCompatActivity {
 
     private CheckBox accept;
+    private boolean cb;
+    private View view;
 
     private void openSell3Activity() {
-        Intent intent = new Intent(this, Sell3Activity.class);
+        Intent intent = new Intent(this, Sell4ObservationsActivity.class);
         startActivity(intent);
         finish();
+    }
+
+    public void onCheckboxClicked(View view) {
+        boolean checked = ((CheckBox) view).isChecked();
+
+        // Check which checkbox was clicked
+        switch (view.getId()) {
+            case R.id.AcceptTermsButton:
+                if (checked) {
+                    cb = true;
+                }
+                else {
+                    cb = false;
+                    break;
+                }
+        }
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sell2rules);
-       // onCheckboxClicked();
-    //}
-    //public void onCheckboxClicked() {
         accept = (CheckBox) findViewById(R.id.AcceptTermsButton);
-        accept.setOnClickListener(new View.OnClickListener() {
+
+        ImageButton next= (ImageButton) findViewById(R.id.NextButton);
+
+        next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //is chkIos checked?
-                if (((CheckBox) v).isChecked()) {
-                    Toast.makeText(Sell2RulesActivity.this,
-                            "Bro, try Android :)", Toast.LENGTH_LONG).show();
-                    //openSell3Activity();
+                if (cb == true) {
+                    openSell3Activity();
+                }
+                else{
                 }
             }
         });
