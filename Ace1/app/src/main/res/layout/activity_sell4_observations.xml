@@ -6,12 +6,89 @@
     android:layout_height="wrap_content"
     tools:context=".Sell4ObservationsActivity">
 
+    <EditText
+        android:id="@+id/editText24"
+        android:layout_width="52dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText23" />
+
+    <EditText
+        android:id="@+id/editText23"
+        android:layout_width="52dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText22" />
+
+    <EditText
+        android:id="@+id/editText22"
+        android:layout_width="52dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText21" />
+
+    <EditText
+        android:id="@+id/editText21"
+        android:layout_width="52dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText20" />
+
+    <EditText
+        android:id="@+id/editText20"
+        android:layout_width="52dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText19" />
+
+    <EditText
+        android:id="@+id/editText19"
+        android:layout_width="52dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText18" />
+
+    <EditText
+        android:id="@+id/editText18"
+        android:layout_width="52dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText17" />
+
     <Button
         android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="150dp"
-        android:layout_marginTop="420dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginTop="520dp"
         android:background="@android:color/transparent"
         android:text="PROSSEGUIR"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,7 +108,7 @@
         android:id="@+id/Switch2"
         android:layout_width="154dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="120dp"
         android:text="Dano na Caixa"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,8 +168,30 @@
         android:id="@+id/Switch8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="12dp"
         android:text="Mancha Exterior E"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="402dp" />
+
+    <EditText
+        android:id="@+id/editText17"
+        android:layout_width="52dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="84dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginTop="43dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/slide1" />
+
 </android.support.constraint.ConstraintLayout>
