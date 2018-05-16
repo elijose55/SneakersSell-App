@@ -8,75 +8,91 @@
 
     <Button
         android:id="@+id/nextButton"
-        android:layout_width="199dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="150dp"
+        android:layout_marginTop="420dp"
         android:background="@android:color/transparent"
         android:text="PROSSEGUIR"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="427dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Switch
         android:id="@+id/Switch1"
         android:layout_width="154dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="320dp"
         android:text="Dano Palmilha E"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="319dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Switch
         android:id="@+id/Switch2"
         android:layout_width="154dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="120dp"
         android:text="Dano na Caixa"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="161dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Switch
         android:id="@+id/Switch3"
         android:layout_width="153dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="200dp"
         android:text="Mancha Solado D"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="201dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Switch
         android:id="@+id/Switch4"
         android:layout_width="155dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="240dp"
         android:text="Mancha Solado E"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="242dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Switch
         android:id="@+id/Switch5"
         android:layout_width="155dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="160dp"
         android:text="Possui Caixa"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Switch
         android:id="@+id/Switch6"
         android:layout_width="154dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="280dp"
         android:text="Dano Palmilha E"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="279dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Switch
         android:id="@+id/Switch7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="360dp"
         android:text="Mancha Exterior D"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="360dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Switch
         android:id="@+id/Switch8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:text="Mancha Exterior E"
-        tools:layout_editor_absoluteX="16dp"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="402dp" />
 </android.support.constraint.ConstraintLayout>
