@@ -6,11 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Switch;
+import android.view.View.OnClickListener;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class Sell4ObservationsActivity extends AppCompatActivity {
 
     private void openCameraActivity() {
-        Intent intent = new Intent(this, Sell5CameraActivity.class);
+        Intent intent = new Intent(this, Sell1Activity.class);
         startActivity(intent);
         finish();
     }
@@ -38,7 +41,7 @@ public class Sell4ObservationsActivity extends AppCompatActivity {
     }
     @Override
     public void onBackPressed(){ //Botão BACK padrão do android
-        startActivity(new Intent(this, MainActivity.class)); //O efeito ao ser pressionado do botão (no caso abre a activity)
+        startActivity(new Intent(this, Sell1Activity.class)); //O efeito ao ser pressionado do botão (no caso abre a activity)
         finishAffinity(); //Método para matar a activity e não deixa-lá indexada na pilhagem
         return;
     }
