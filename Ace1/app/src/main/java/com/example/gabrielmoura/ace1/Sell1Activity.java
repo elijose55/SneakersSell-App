@@ -20,11 +20,6 @@ public class Sell1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sell1);
 
-        ImageButton info1= (ImageButton) findViewById(R.id.InfoButton1);
-        ImageButton info2= (ImageButton) findViewById(R.id.InfoButton2);
-        ImageButton info3= (ImageButton) findViewById(R.id.InfoButton3);
-        ImageButton info4= (ImageButton) findViewById(R.id.InfoButton4);
-        ImageButton info5= (ImageButton) findViewById(R.id.InfoButton5);
         Button next= (Button) findViewById(R.id.NextButton);
 
         next.setOnClickListener(new View.OnClickListener() {
