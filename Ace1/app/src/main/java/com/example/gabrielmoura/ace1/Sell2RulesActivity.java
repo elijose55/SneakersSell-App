@@ -16,7 +16,7 @@ public class Sell2RulesActivity extends AppCompatActivity {
     private View view;
 
     private void openSell3Activity() {
-        Intent intent = new Intent(this, Sell4ObservationsActivity.class);
+        Intent intent = new Intent(this, Sell3Activity.class);
         startActivity(intent);
         finish();
     }

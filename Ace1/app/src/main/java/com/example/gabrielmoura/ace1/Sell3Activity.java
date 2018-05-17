@@ -11,15 +11,21 @@ import android.widget.ImageButton;
 
 public class Sell3Activity extends AppCompatActivity {
 
+    private void openSell4ObservationActivity() {
+        Intent intent4 = new Intent(this, Sell4ObservationsActivity.class);
+        startActivity(intent4);
+        finish();
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sell3);
 
-        Button Prosseguir = (Button) findViewById(R.id.NextButton);
+        Button prosseguir = (Button) findViewById(R.id.nextButton3);
 
-        Prosseguir.setOnClickListener(new View.OnClickListener() {
+        prosseguir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openSell4ObservationActivity();
@@ -27,11 +33,6 @@ public class Sell3Activity extends AppCompatActivity {
         });
     }
 
-    public void openSell4ObservationActivity() {
-        Intent intent4 = new Intent(this, Sell4ObservationsActivity.class);
-        startActivity(intent4);
-        return;
-    };
 
 
     @Override
