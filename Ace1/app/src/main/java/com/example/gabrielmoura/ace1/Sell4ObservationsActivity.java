@@ -13,7 +13,7 @@ import android.widget.Toast;
 public class Sell4ObservationsActivity extends AppCompatActivity {
 
     private void openCameraActivity() {
-        Intent intent = new Intent(this, Sell1Activity.class);
+        Intent intent = new Intent(this, Sell5CameraActivity.class);
         startActivity(intent);
         finish();
     }
@@ -31,7 +31,7 @@ public class Sell4ObservationsActivity extends AppCompatActivity {
         Switch Switch6= (Switch) findViewById(R.id.Switch6);
         Switch Switch7= (Switch) findViewById(R.id.Switch7);
         Switch Switch8= (Switch) findViewById(R.id.Switch8);
-        Button Next= (Button) findViewById(R.id.NextButton);
+        Button Next= (Button) findViewById(R.id.nextButton4);
         Next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,7 +41,7 @@ public class Sell4ObservationsActivity extends AppCompatActivity {
     }
     @Override
     public void onBackPressed(){ //Botão BACK padrão do android
-        startActivity(new Intent(this, Sell1Activity.class)); //O efeito ao ser pressionado do botão (no caso abre a activity)
+        startActivity(new Intent(this, Sell3Activity.class)); //O efeito ao ser pressionado do botão (no caso abre a activity)
         finishAffinity(); //Método para matar a activity e não deixa-lá indexada na pilhagem
         return;
     }
