@@ -23,11 +23,12 @@
         android:layout_width="357dp"
         android:layout_height="36dp"
         android:layout_marginStart="14dp"
+        android:layout_marginTop="10dp"
+        android:text="Bem-vindo à melhor plataforma para vender seus sneakers"
         android:textAlignment="viewStart"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="Bem-vindo à melhor plataforma para vender seus sneakers" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/NextButton"

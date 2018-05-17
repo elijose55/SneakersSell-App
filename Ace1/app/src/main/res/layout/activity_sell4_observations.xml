@@ -167,11 +167,12 @@
     <Switch
         android:id="@+id/Switch8"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="7dp"
         android:layout_marginStart="12dp"
+        android:layout_marginTop="14dp"
         android:text="Mancha Exterior E"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="402dp" />
+        app:layout_constraintTop_toBottomOf="@+id/Switch7" />
 
     <EditText
         android:id="@+id/editText17"
