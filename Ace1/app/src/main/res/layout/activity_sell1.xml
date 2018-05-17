@@ -81,8 +81,8 @@
         android:layout_marginEnd="40dp"
         android:layout_marginTop="40dp"
         android:ems="10"
+        android:hint="Redes sociais"
         android:inputType="textPersonName"
-        android:text="Redes sociais"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText6" />
 
@@ -93,8 +93,8 @@
         android:layout_marginEnd="40dp"
         android:layout_marginTop="40dp"
         android:ems="10"
+        android:hint="Pagamento/Recebimento"
         android:inputType="textPersonName"
-        android:text="Pagamento/Recebimento"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText5" />
 
@@ -105,8 +105,8 @@
         android:layout_marginEnd="40dp"
         android:layout_marginTop="40dp"
         android:ems="10"
+        android:hint="Selfie com documento"
         android:inputType="textPersonName"
-        android:text="Selfie com documento"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText4" />
 
@@ -117,8 +117,8 @@
         android:layout_marginEnd="40dp"
         android:layout_marginTop="40dp"
         android:ems="10"
+        android:hint="Endereço"
         android:inputType="textPersonName"
-        android:text="Endereço"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
@@ -129,8 +129,8 @@
         android:layout_marginEnd="40dp"
         android:layout_marginTop="40dp"
         android:ems="10"
+        android:hint="Informações pessoais"
         android:inputType="textPersonName"
-        android:text="Informações pessoais"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
