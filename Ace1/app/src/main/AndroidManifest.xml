@@ -24,6 +24,9 @@
         <activity android:name=".Sell1Activity">
 
         </activity>
+        <activity android:name=".Buy1NovoActivity" />
+        <activity android:name=".Buy1UsadoActivity" />
+        <activity android:name=".Buy2UsadoActivity" />
     </application>
 
 </manifest>
