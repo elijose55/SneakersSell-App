@@ -21,6 +21,8 @@
         <activity android:name=".Sell4ObservationsActivity" />
         <activity android:name=".Sell5CameraActivity" />
         <activity android:name=".Sell6ReviewActivity" />
+        <activity android:name=".Sell1Activity" />
+        <activity android:name=".TabPages" />
     </application>
 
 </manifest>

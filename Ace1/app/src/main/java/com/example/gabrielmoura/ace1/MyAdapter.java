@@ -2,7 +2,6 @@ package com.example.gabrielmoura.ace1;
 
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -17,9 +16,9 @@ import java.util.List;
 public class MyAdapter extends RecyclerView.Adapter<SneakerViewHolder> {
 
     private Context mContext;
-    private List<SneakerData> mSneakerList;
+    private List<SneakerCardData> mSneakerList;
 
-    MyAdapter(Context mContext, List<SneakerData> mSneakerList) {
+    MyAdapter(Context mContext, List<SneakerCardData> mSneakerList) {
         this.mContext = mContext;
         this.mSneakerList = mSneakerList;
     }
@@ -34,6 +33,13 @@ public class MyAdapter extends RecyclerView.Adapter<SneakerViewHolder> {
     public void onBindViewHolder(final SneakerViewHolder holder, int position) {
         holder.mImage.setImageResource(mSneakerList.get(position).getSneakerImage());
         holder.mTitle.setText(mSneakerList.get(position).getSneakerName());
+        holder.mCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Do something in response to card click
+
+            }
+        });
     }
 
     @Override
@@ -49,10 +55,12 @@ class SneakerViewHolder extends RecyclerView.ViewHolder {
     CardView mCardView;
 
     SneakerViewHolder(View itemView) {
+
         super(itemView);
 
         mImage = itemView.findViewById(R.id.ivImage);
         mTitle = itemView.findViewById(R.id.tvTitle);
         mCardView = itemView.findViewById(R.id.cardview);
+
+        }
     }
-}
