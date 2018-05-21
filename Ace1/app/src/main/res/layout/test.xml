@@ -11,11 +11,10 @@ tools:context=".TabPages">
         android:id="@+id/toolbar2"
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:background="?attr/colorPrimary"
+        android:background="@color/colorPrimaryDark"
         android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:theme="@style/ThemeOverlay.AppCompat.Dark">
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
         <ImageButton
             android:id="@+id/btn_sell"

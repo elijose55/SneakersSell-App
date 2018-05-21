@@ -11,6 +11,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.OnProgressListener;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,6 +35,24 @@ public class DestaquesFragment extends Fragment {
     List<SneakerCardData> mSneakerList;
     SneakerCardData mSneakerCardData;
     View v;
+
+
+
+
+    // Creating DatabaseReference.
+    DatabaseReference databaseReference;
+
+    // Creating RecyclerView.
+    RecyclerView recyclerView;
+
+    // Creating RecyclerView.Adapter.
+    RecyclerView.Adapter adapter ;
+
+    // Creating Progress dialog
+    ProgressDialog progressDialog;
+
+    // Creating List of ImageUploadInfo class.
+    List<ImageUploadInfo> list = new ArrayList<>();
 
     @Nullable
     @Override
