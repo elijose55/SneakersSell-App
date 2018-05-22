@@ -14,8 +14,8 @@
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="164dp"
         android:checked="false"
-        android:text="Eu li e aceito os termos"
         android:onClick="onCheckboxClicked"
+        android:text="Eu li e aceito os termos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
