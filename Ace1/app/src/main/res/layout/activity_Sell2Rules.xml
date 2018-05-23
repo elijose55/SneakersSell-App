@@ -13,8 +13,7 @@
         android:layout_marginEnd="24dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="64dp"
-        android:text="Bem-vindo à melhor plataforma para vender seus sneakers"
-        android:textAppearance="@android:style/TextAppearance.Widget.Toolbar.Title"
+        android:text="Bem-vind§o à melhor plataforma para vender seus sneakers"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

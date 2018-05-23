@@ -2,6 +2,7 @@ package com.example.gabrielmoura.ace1;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -39,6 +40,7 @@ public class TabPages extends AppCompatActivity {
 
         btnProfile.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                openUserinfoActivity();
                 // Do something in response to button profile click
             }
         });
@@ -57,6 +59,12 @@ public class TabPages extends AppCompatActivity {
         Log.d(TAG, "onCreate: starting.");
 
         setupViewPager();
+    }
+
+    private void openUserinfoActivity() {
+        Intent intent = new Intent(this, UserinfoActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     /**
