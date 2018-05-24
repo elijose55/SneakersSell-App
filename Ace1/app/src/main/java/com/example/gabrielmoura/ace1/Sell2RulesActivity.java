@@ -42,6 +42,7 @@ public class Sell2RulesActivity extends AppCompatActivity {
         accept = (CheckBox) findViewById(R.id.AcceptTermsButton);
 
         ImageButton next= (ImageButton) findViewById(R.id.NextButton);
+        ImageButton back = (ImageButton) findViewById(R.id.backbuttonsell2);
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +54,19 @@ public class Sell2RulesActivity extends AppCompatActivity {
                 }
             }
         });
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Goback();
+            }
+        });
+    }
+
+    private void Goback() {
+        Intent intent = new Intent(this, Sell1Activity.class);
+        startActivity(intent);
+        finish();
     }
 
     @Override
