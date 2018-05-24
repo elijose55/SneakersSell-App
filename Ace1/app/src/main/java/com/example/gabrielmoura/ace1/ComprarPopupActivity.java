@@ -16,6 +16,11 @@ public class ComprarPopupActivity extends AppCompatActivity {
         startActivity(intentbn22);
         finish();
     }
+    private  void openTabPages() {
+        Intent intentcheckout = new Intent(this, TabPages.class);
+        startActivity(intentcheckout);
+        finish();
+    }
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +36,12 @@ public class ComprarPopupActivity extends AppCompatActivity {
         });
 
         ImageButton voltarinicioimgbtn = (ImageButton) findViewById(R.id.finalizarcompraimgbtn);
+        voltarinicioimgbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openTabPages();
+            }
+        });
 
 
         DisplayMetrics dm = new DisplayMetrics();
