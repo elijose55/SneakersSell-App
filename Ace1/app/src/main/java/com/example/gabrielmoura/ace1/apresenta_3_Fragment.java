@@ -11,7 +11,7 @@ import android.widget.Button;
 
 
 public class apresenta_3_Fragment extends Fragment {
-    private void openContactsActivity(String typeofmessage) {
+    private void openTabPagesActivity(String typeofmessage) {
         // Exemplo de código para abrir uma activity.
         Intent intent = new Intent(((MainActivity)getActivity()), TabPages.class);
         startActivity(intent);
@@ -30,7 +30,7 @@ public class apresenta_3_Fragment extends Fragment {
         navegar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openContactsActivity("Destaques");
+                openTabPagesActivity("Destaques");
 
             }
         });

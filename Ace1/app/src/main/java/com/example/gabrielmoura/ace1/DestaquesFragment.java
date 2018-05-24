@@ -1,6 +1,7 @@
 package com.example.gabrielmoura.ace1;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -74,5 +75,13 @@ public class DestaquesFragment extends Fragment {
         mSneakerList.add(mSneakerCardData);
 
 
+    }
+    private void openTabPagesActivity(String typeofmessage) {
+        // Exemplo de código para abrir uma activity.
+        Intent intent = new Intent(((TabPages)getActivity()), DetailActivity.class);
+        startActivity(intent);
+
+        // Depois de abrir a ContactsActivity, não há porque manter a MainActivity aberta.
+        ((TabPages)getActivity()).finish();
     }
 }

@@ -39,7 +39,7 @@ public class Sell2RulesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sell2rules);
-        accept = (CheckBox) findViewById(R.id.AcceptTermsButton);
+        accept = findViewById(R.id.AcceptTermsButton);
 
         ImageButton next= (ImageButton) findViewById(R.id.NextButton);
 
