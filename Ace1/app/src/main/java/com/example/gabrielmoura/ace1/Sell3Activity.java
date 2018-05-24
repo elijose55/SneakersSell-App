@@ -23,14 +23,27 @@ public class Sell3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sell3);
 
-        Button prosseguir = (Button) findViewById(R.id.nextButton3);
+        ImageButton next = (ImageButton) findViewById(R.id.nextbuttonsell3);
+        ImageButton back = (ImageButton) findViewById(R.id.backbuttonsell3);
 
-        prosseguir.setOnClickListener(new View.OnClickListener() {
+        next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openSell4ObservationActivity();
             }
         });
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Goback();
+            }
+        });
+    }
+
+    private void Goback() {
+        Intent intent = new Intent(this, Sell2RulesActivity.class);
+        startActivity(intent);
+        finish();
     }
 
 
