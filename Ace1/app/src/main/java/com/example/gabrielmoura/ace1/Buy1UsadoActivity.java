@@ -12,12 +12,12 @@ import android.view.View;
 public class Buy1UsadoActivity extends AppCompatActivity {
 
 
+
     private  void openBuy2UsadoActivity() {
         Intent intentbn2 = new Intent(this, Buy2UsadoActivity.class);
         startActivity(intentbn2);
         finish();
     }
-
 
 
     @Override
