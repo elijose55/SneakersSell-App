@@ -21,8 +21,20 @@ public class sneaker_detail extends AppCompatActivity {
     ViewPager viewPager;
 
     private void openSell1Activity() {
-        Intent intent = new Intent(this, Sell1Activity.class);
-        startActivity(intent);
+        Intent intent1 = new Intent(this, Sell1Activity.class);
+        startActivity(intent1);
+        finish();
+    }
+
+    private  void openBuy1NovoActivity() {
+        Intent intentbn = new Intent(this, Buy1UsadoActivity.class);
+        startActivity(intentbn);
+        finish();
+    }
+
+    private  void openBuy1UsadoActivity() {
+        Intent intentbu = new Intent(this, Buy1UsadoActivity.class);
+        startActivity(intentbu);
         finish();
     }
 
@@ -33,17 +45,32 @@ public class sneaker_detail extends AppCompatActivity {
 
         Button vender = (Button) findViewById(R.id.querovender);
 
+        Button comprarnovobtn = (Button) findViewById(R.id.comprarnovo);
+
+        Button comprarusadobtn = (Button) findViewById(R.id.comprarusado);
+
+
         vender.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openSell1Activity();
             }
         });
-    }
+        comprarnovobtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openBuy1NovoActivity();
+            }
+        });
+        comprarusadobtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openBuy1UsadoActivity();
+            }
+        });
 
-    public void onBackPressed(){ //Botão BACK padrão do android
-        startActivity(new Intent(this, TabPages.class)); //O efeito ao ser pressionado do botão (no caso abre a activity)
-        finishAffinity(); //Método para matar a activity e não deixa-lá indexada na pilhagem
-        return;
+
+
+
     }
 }
