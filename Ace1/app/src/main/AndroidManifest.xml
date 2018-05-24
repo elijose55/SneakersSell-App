@@ -24,7 +24,7 @@
         <activity android:name=".Sell6ReviewActivity" />
         <activity android:name=".Sell1Activity" />
         <activity android:name=".TabPages" />
-        <activity android:name=".UserinfoActivity"></activity>
+        <activity android:name=".UserinfoActivity"/>
     </application>
 
 </manifest>

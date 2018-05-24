@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/change_message_1"
+        android:id="@+id/change_message_3"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginBottom="8dp"
@@ -41,14 +41,14 @@
         android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="74dp"
-        android:layout_marginBottom="68dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="80dp"
         android:text="Anuncie e venda com rapidez e praticidade. Só se preocupe com o envio depois de ter garantido sua venda!"
         android:textAlignment="center"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/change_message_1"
+        app:layout_constraintBottom_toTopOf="@+id/change_message_3"
         app:layout_constraintTop_toTopOf="@+id/viewPager"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         tools:layout_editor_absoluteX="0dp"
         tools:text="Sua referência em compra e venda de sneakers" />
 

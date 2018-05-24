@@ -14,7 +14,10 @@ import android.widget.TextView;
 import java.util.List;
 
 
+
 public class MyAdapter extends RecyclerView.Adapter<SneakerViewHolder> {
+
+
     ViewPager viewPager;
     private Context mContext;
     private List<SneakerCardData> mSneakerList;
@@ -24,17 +27,19 @@ public class MyAdapter extends RecyclerView.Adapter<SneakerViewHolder> {
         this.mContext = mContext;
         this.mSneakerList = mSneakerList;
     }
-    private void openDetailActivity() {
-        Intent intent10 = new Intent(mContext, sneaker_detail.class);
-        viewPager.getContext().startActivity(intent10);
-    }
+
 
     @Override
     public SneakerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View mView = LayoutInflater.from(parent.getContext()).inflate(R.layout.recyclerview_row_item, parent, false);
         return new SneakerViewHolder(mView);
     }
+    private void openDetailActivity() {
+        Intent intent = new Intent(mContext, sneaker_detail.class);
+        mContext.startActivity(intent);
 
+
+    }
     @Override
     public void onBindViewHolder(final SneakerViewHolder holder, int position) {
         holder.mImage.setImageResource(mSneakerList.get(position).getSneakerImage());
@@ -45,8 +50,9 @@ public class MyAdapter extends RecyclerView.Adapter<SneakerViewHolder> {
             public void onClick(View view) {
                 // Do something in response to card click
                 openDetailActivity();
-
             }
+
+
         });
     }
 
@@ -71,5 +77,6 @@ class SneakerViewHolder extends RecyclerView.ViewHolder {
         mCardView = itemView.findViewById(R.id.cardview);
 
     }
+
 }
 

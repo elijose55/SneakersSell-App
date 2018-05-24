@@ -12,10 +12,12 @@ import android.widget.Button;
 
 
 public class apresenta_2_Fragment extends Fragment {
+
+
+
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
-    {
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_apresenta_2, container, false);
 
