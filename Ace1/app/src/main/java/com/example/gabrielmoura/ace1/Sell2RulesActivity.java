@@ -61,5 +61,6 @@ public class Sell2RulesActivity extends AppCompatActivity {
         finishAffinity(); //Método para matar a activity e não deixa-lá indexada na pilhagem
         return;
     }
+
 }
 

@@ -105,27 +105,30 @@
         android:layout_width="108dp"
         android:layout_height="19dp"
         android:layout_marginBottom="12dp"
+        android:layout_marginStart="48dp"
         android:text="Preço anunciado:"
         app:layout_constraintBottom_toTopOf="@+id/textView16"
-        tools:layout_editor_absoluteX="48dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="82dp"
         android:layout_height="19dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginStart="48dp"
         android:text="Você recebe:"
         app:layout_constraintBottom_toTopOf="@+id/textView17"
-        tools:layout_editor_absoluteX="48dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="100dp"
         android:layout_height="19dp"
         android:layout_marginBottom="3dp"
+        android:layout_marginStart="48dp"
         android:text="Aceita parcelas:"
         app:layout_constraintBottom_toTopOf="@+id/publish"
-        tools:layout_editor_absoluteX="48dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/publish"
