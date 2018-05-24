@@ -14,6 +14,7 @@ import android.widget.ImageButton;
 
 public class TabPages extends AppCompatActivity {
 
+
     private static final String TAG = "TabPages";
     private static final int ACTIVITY_NUM = 0;
 
@@ -48,6 +49,7 @@ public class TabPages extends AppCompatActivity {
         btnSell.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Do something in response to button sell click
+                openSell1Activity();
             }
         });
     }
@@ -66,10 +68,17 @@ public class TabPages extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+    private void openSell1Activity() {
+        Intent intent = new Intent(this, Sell1Activity.class);
+        startActivity(intent);
+        finish();
+    }
+
+}
+
 
     /**
      * Responsible for adding the 3 tabs: Camera, Home, Messages
      */
 
 
-}

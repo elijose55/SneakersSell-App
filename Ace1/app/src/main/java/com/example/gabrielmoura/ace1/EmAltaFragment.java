@@ -22,4 +22,5 @@ public class EmAltaFragment extends Fragment {
 
         return view;
     }
+
 }
