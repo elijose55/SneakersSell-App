@@ -2,6 +2,8 @@ package com.example.gabrielmoura.ace1;
 
 
 import android.content.Context;
+import android.content.Intent;
+import android.support.v4.view.ViewPager;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -13,15 +15,16 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.firebase.ui.storage.images.FirebaseImageLoader;
-
 import java.util.List;
+
 
 
 public class MyAdapter extends RecyclerView.Adapter<SneakerViewHolder> {
 
+
+    ViewPager viewPager;
     private Context mContext;
     private List<SneakerCardData> mSneakerList;
-
 
 
     MyAdapter(Context mContext, List<SneakerCardData> mSneakerList) {
@@ -29,13 +32,19 @@ public class MyAdapter extends RecyclerView.Adapter<SneakerViewHolder> {
         this.mSneakerList = mSneakerList;
     }
 
+
     @Override
     public SneakerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View mView = LayoutInflater.from(parent.getContext()).inflate(R.layout.recyclerview_row_item, parent, false);
 
         return new SneakerViewHolder(mView);
     }
+    private void openDetailActivity() {
+        Intent intent = new Intent(mContext, sneaker_detail.class);
+        mContext.startActivity(intent);
 
+
+    }
     @Override
     public void onBindViewHolder(final SneakerViewHolder holder, int position) {
 
@@ -55,8 +64,10 @@ public class MyAdapter extends RecyclerView.Adapter<SneakerViewHolder> {
             @Override
             public void onClick(View view) {
                 // Do something in response to card click
-
+                openDetailActivity();
             }
+
+
         });
     }
 
@@ -83,5 +94,7 @@ class SneakerViewHolder extends RecyclerView.ViewHolder {
         mCardView = itemView.findViewById(R.id.cardview);
         Log.d("tst","Adapter");
 
-        }
     }
+
+}
+

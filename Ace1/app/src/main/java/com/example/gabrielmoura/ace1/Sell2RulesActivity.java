@@ -39,9 +39,10 @@ public class Sell2RulesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sell2rules);
-        accept = (CheckBox) findViewById(R.id.AcceptTermsButton);
+        accept = findViewById(R.id.AcceptTermsButton);
 
         ImageButton next= (ImageButton) findViewById(R.id.NextButton);
+        ImageButton back = (ImageButton) findViewById(R.id.backbuttonsell2);
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +54,19 @@ public class Sell2RulesActivity extends AppCompatActivity {
                 }
             }
         });
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Goback();
+            }
+        });
+    }
+
+    private void Goback() {
+        Intent intent = new Intent(this, Sell1Activity.class);
+        startActivity(intent);
+        finish();
     }
 
     @Override
@@ -61,5 +75,6 @@ public class Sell2RulesActivity extends AppCompatActivity {
         finishAffinity(); //Método para matar a activity e não deixa-lá indexada na pilhagem
         return;
     }
+
 }
 

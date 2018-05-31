@@ -31,18 +31,34 @@ public class Sell4ObservationsActivity extends AppCompatActivity {
         Switch Switch6= (Switch) findViewById(R.id.Switch6);
         Switch Switch7= (Switch) findViewById(R.id.Switch7);
         Switch Switch8= (Switch) findViewById(R.id.Switch8);
-        Button Next= (Button) findViewById(R.id.nextButton4);
+        ImageButton Next= (ImageButton) findViewById(R.id.nextbuttonsell4);
+        ImageButton back = (ImageButton) findViewById(R.id.backbuttonsell4);
         Next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openCameraActivity();
             }
         });
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Goback();
+            }
+        });
+
+
     }
     @Override
     public void onBackPressed(){ //Botão BACK padrão do android
         startActivity(new Intent(this, Sell3Activity.class)); //O efeito ao ser pressionado do botão (no caso abre a activity)
         finishAffinity(); //Método para matar a activity e não deixa-lá indexada na pilhagem
         return;
+    }
+
+    private void Goback() {
+        Intent intent = new Intent(this, Sell3Activity.class);
+        startActivity(intent);
+        finish();
     }
 }

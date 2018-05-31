@@ -3,196 +3,239 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     tools:context=".Sell4ObservationsActivity">
 
     <EditText
         android:id="@+id/editText24"
-        android:layout_width="52dp"
+        android:layout_width="60dp"
         android:layout_height="25dp"
-        android:layout_marginEnd="98dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Switch8"
         app:layout_constraintTop_toBottomOf="@+id/editText23" />
 
     <EditText
         android:id="@+id/editText23"
-        android:layout_width="52dp"
+        android:layout_width="60dp"
         android:layout_height="25dp"
-        android:layout_marginEnd="98dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Switch7"
         app:layout_constraintTop_toBottomOf="@+id/editText22" />
 
     <EditText
         android:id="@+id/editText22"
-        android:layout_width="52dp"
+        android:layout_width="60dp"
         android:layout_height="25dp"
-        android:layout_marginEnd="98dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Switch1"
         app:layout_constraintTop_toBottomOf="@+id/editText21" />
 
     <EditText
         android:id="@+id/editText21"
-        android:layout_width="52dp"
+        android:layout_width="60dp"
         android:layout_height="25dp"
-        android:layout_marginEnd="98dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Switch6"
         app:layout_constraintTop_toBottomOf="@+id/editText20" />
 
     <EditText
         android:id="@+id/editText20"
-        android:layout_width="52dp"
+        android:layout_width="60dp"
         android:layout_height="25dp"
-        android:layout_marginEnd="98dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Switch4"
         app:layout_constraintTop_toBottomOf="@+id/editText19" />
 
     <EditText
         android:id="@+id/editText19"
-        android:layout_width="52dp"
+        android:layout_width="60dp"
         android:layout_height="25dp"
-        android:layout_marginEnd="98dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Switch3"
         app:layout_constraintTop_toBottomOf="@+id/editText18" />
 
     <EditText
         android:id="@+id/editText18"
-        android:layout_width="52dp"
+        android:layout_width="60dp"
         android:layout_height="25dp"
-        android:layout_marginEnd="98dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Switch5"
         app:layout_constraintTop_toBottomOf="@+id/editText17" />
-
-    <Button
-        android:id="@+id/nextButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="148dp"
-        android:layout_marginTop="520dp"
-        android:background="@android:color/transparent"
-        android:text="PROSSEGUIR"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Switch
         android:id="@+id/Switch1"
-        android:layout_width="154dp"
+        android:layout_width="155dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="16dp"
         android:text="Dano Palmilha E"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/Switch7"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Switch
         android:id="@+id/Switch2"
-        android:layout_width="154dp"
+        android:layout_width="155dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:text="Dano na Caixa"
+        app:layout_constraintBottom_toTopOf="@+id/Switch5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Switch
         android:id="@+id/Switch3"
-        android:layout_width="153dp"
+        android:layout_width="155dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="16dp"
         android:text="Mancha Solado D"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/Switch4"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Switch
         android:id="@+id/Switch4"
         android:layout_width="155dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="16dp"
         android:text="Mancha Solado E"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/Switch6"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Switch
         android:id="@+id/Switch5"
         android:layout_width="155dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="16dp"
         android:text="Possui Caixa"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/Switch3"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Switch
         android:id="@+id/Switch6"
-        android:layout_width="154dp"
+        android:layout_width="155dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="280dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="16dp"
         android:text="Dano Palmilha E"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/Switch1"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Switch
         android:id="@+id/Switch7"
-        android:layout_width="wrap_content"
+        android:layout_width="155dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="360dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="16dp"
         android:text="Mancha Exterior D"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/Switch8"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Switch
         android:id="@+id/Switch8"
-        android:layout_width="wrap_content"
-        android:layout_height="7dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="14dp"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
+        android:layout_marginStart="16dp"
         android:text="Mancha Exterior E"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Switch7" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editText17"
-        android:layout_width="52dp"
+        android:layout_width="60dp"
         android:layout_height="25dp"
-        android:layout_marginEnd="98dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Switch2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="84dp"
-        android:layout_height="54dp"
-        android:layout_marginEnd="142dp"
-        android:layout_marginTop="43dp"
+        android:layout_width="202dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089999974"
         app:srcCompat="@drawable/slide1" />
+
+    <ImageButton
+        android:id="@+id/nextbuttonsell4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/botao_frente" />
+
+    <ImageButton
+        android:id="@+id/backbuttonsell4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/botao_voltar" />
 
 </android.support.constraint.ConstraintLayout>

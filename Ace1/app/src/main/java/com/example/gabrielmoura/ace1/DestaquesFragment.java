@@ -1,6 +1,7 @@
 package com.example.gabrielmoura.ace1;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;

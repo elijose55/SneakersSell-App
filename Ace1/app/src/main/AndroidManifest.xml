@@ -10,21 +10,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".TabPages">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".sneaker_detail" />
         <activity android:name=".Sell2RulesActivity" />
         <activity android:name=".Sell3Activity" />
         <activity android:name=".Sell4ObservationsActivity" />
         <activity android:name=".Sell5CameraActivity" />
         <activity android:name=".Sell6ReviewActivity" />
         <activity android:name=".Sell1Activity" />
-        <activity android:name=".sneaker_detail" />
+        <activity android:name=".TabPages" />
+        <activity android:name=".UserinfoActivity"/>
+        <activity android:name=".Buy1NovoActivity" />
+        <activity android:name=".Buy1UsadoActivity" />
+        <activity android:name=".Buy2UsadoActivity" />
+        <activity android:name=".ComprarPopupActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            />
+        />
     </application>
 
 </manifest>
