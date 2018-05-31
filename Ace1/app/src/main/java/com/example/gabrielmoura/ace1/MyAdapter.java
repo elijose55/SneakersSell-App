@@ -6,11 +6,15 @@ import android.content.Intent;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.firebase.ui.storage.images.FirebaseImageLoader;
 import java.util.List;
 
 
@@ -32,6 +36,7 @@ public class MyAdapter extends RecyclerView.Adapter<SneakerViewHolder> {
     @Override
     public SneakerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View mView = LayoutInflater.from(parent.getContext()).inflate(R.layout.recyclerview_row_item, parent, false);
+
         return new SneakerViewHolder(mView);
     }
     private void openDetailActivity() {
@@ -42,9 +47,19 @@ public class MyAdapter extends RecyclerView.Adapter<SneakerViewHolder> {
     }
     @Override
     public void onBindViewHolder(final SneakerViewHolder holder, int position) {
-        holder.mImage.setImageResource(mSneakerList.get(position).getSneakerImage());
-        holder.mTitle.setText(mSneakerList.get(position).getSneakerName());
 
+        //holder.mImage.setImageResource(mSneakerList.get(position).getSneakerImage());
+        holder.mTitleNamee.setText(mSneakerList.get(position).getName());
+        holder.mTitlePricee.setText("R$"+String.valueOf((mSneakerList.get(position).getPrice()))+",00");
+
+        Glide.with(mContext)
+                .using(new FirebaseImageLoader())
+                .load(mSneakerList.get(position).getSneakerImage())
+                .diskCacheStrategy(DiskCacheStrategy.NONE)
+                .skipMemoryCache(true)
+                .fitCenter()
+                .into(holder.mImagee);
+        Log.d("tst","Adapter1");
         holder.mCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -64,17 +79,20 @@ public class MyAdapter extends RecyclerView.Adapter<SneakerViewHolder> {
 
 class SneakerViewHolder extends RecyclerView.ViewHolder {
 
-    ImageView mImage;
-    TextView mTitle;
+    ImageView mImagee;
+    TextView mTitleNamee;
+    TextView mTitlePricee;
     CardView mCardView;
 
     SneakerViewHolder(View itemView) {
 
         super(itemView);
 
-        mImage = itemView.findViewById(R.id.ivImage);
-        mTitle = itemView.findViewById(R.id.tvTitle);
+        mImagee = itemView.findViewById(R.id.ivImagee);
+        mTitleNamee = itemView.findViewById(R.id.tvTitlee);
+        mTitlePricee = itemView.findViewById(R.id.tvPricee);
         mCardView = itemView.findViewById(R.id.cardview);
+        Log.d("tst","Adapter");
 
     }
 

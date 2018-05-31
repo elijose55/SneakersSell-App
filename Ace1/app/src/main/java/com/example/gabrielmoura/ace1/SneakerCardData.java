@@ -1,26 +1,54 @@
 package com.example.gabrielmoura.ace1;
 
+import android.util.Log;
+
+import com.google.firebase.storage.StorageReference;
+
 public class SneakerCardData {
 
-    private String sneakerName;
-    private String sneakerDescription;
-    private int sneakerImage;
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public SneakerCardData(String sneakerName, String sneakerDescription, int sneakerImage) {
-        this.sneakerName = sneakerName;
-        this.sneakerDescription = sneakerDescription;
+    private String name;
+
+    public void setUid(String uid) {
+        this.uid = uid;
+    }
+
+    private String uid;
+
+    public void setPrice(Long price) {
+        this.price = price;
+    }
+
+    private Long price;
+    private StorageReference sneakerImage;
+
+    public SneakerCardData(){}
+
+    public SneakerCardData(String uid, String name, Long price, StorageReference sneakerImage) {
+        this.uid = uid;
+        this.name = name;
+        this.price = price;
         this.sneakerImage = sneakerImage;
     }
 
-    public String getSneakerName() {
-        return sneakerName;
+
+    public String getName() {
+        return name;
     }
 
-    public String getSneakerDescription() {
-        return sneakerDescription;
+    public String getUid() {
+        return uid;
     }
 
-    public int getSneakerImage() {
+    public Long getPrice() {
+        return price;
+    }
+
+    public StorageReference getSneakerImage() {
+        Log.d("tst","data");
         return sneakerImage;
     }
 }

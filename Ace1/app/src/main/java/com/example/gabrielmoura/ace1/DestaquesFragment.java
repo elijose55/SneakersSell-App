@@ -5,83 +5,150 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import java.util.ArrayList;
 import java.util.List;
 
-/**  import eli.testes.R;
- *
- */
+
 
 public class DestaquesFragment extends Fragment {
     private static final String TAG = "DestaquesFragment";
 
-    Toolbar mToolbar;
-    RecyclerView mRecyclerView;
-    List<SneakerCardData> mSneakerList;
-    SneakerCardData mSneakerCardData;
-    View v;
+    private Toolbar mToolbar;
+    private RecyclerView mRecyclerView;
+    private List<SneakerCardData> mSneakerListDestaques;
+    private List<DatabaseReference> mDatabaseReferenceList = new ArrayList<>();
+    private SneakerCardData mSneakerCardData;
+    private SneakerCardData snk = null;
+    private View v;
+    private int sneakers_in_page = 11;
+    private String link = null;
+    private StorageReference tenis_ref;
+
+    public DestaquesFragment() {
+        mSneakerListDestaques = new ArrayList<>();
+    }
+
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
+        Log.d("tag","view");
+
         v = inflater.inflate(R.layout.fragment_destaques,container,false);
 
-        mRecyclerView = (RecyclerView) v.findViewById(R.id.recyclerview);
 
-        MyAdapter myAdapter = new MyAdapter(getContext(),mSneakerList);
-        final FragmentActivity c = getActivity();
-        GridLayoutManager mGridLayoutManager = new GridLayoutManager(v.getContext(), 2);
-        mRecyclerView.setLayoutManager(mGridLayoutManager);
-        mRecyclerView.setAdapter(myAdapter);
 
         mToolbar = v.findViewById(R.id.toolbar2);
         mToolbar.setTitle(getResources().getString(R.string.app_name));
 
+        mRecyclerView = (RecyclerView) v.findViewById(R.id.recyclerview);
+
+        MyAdapter myAdapter = new MyAdapter(getContext(),mSneakerListDestaques);
+        GridLayoutManager mGridLayoutManager = new GridLayoutManager(v.getContext(), 2);
+        mRecyclerView.setLayoutManager(mGridLayoutManager);
+        mRecyclerView.setAdapter(myAdapter);
+
+
+
         return v;
     }
+
+
+
+
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
 
+        //referencia para o storage
+        FirebaseStorage storage = FirebaseStorage.getInstance();
+        final StorageReference storageRef = storage.getReference("images");
+        StorageReference imagesRef = storageRef.child("images");
+
+        //StorageReference tenis1_ref = storageRef.child("tenis1.jpeg");
+        //StorageReference tenis2_ref = storageRef.child("tenis2.jpeg");
+        //StorageReference tenis3_ref = storageRef.child("tenis3.jpeg");
+        //StorageReference tenis4_ref = storageRef.child("tenis4.jpeg");
+        //StorageReference tenis5_ref = storageRef.child("tenis5.jpeg");
+
+        //tenis1_ref.getName();
+
+        DatabaseReference mDatabase;
+        //referencia para o database
+
+        ValueEventListener messageListener = new ValueEventListener() {
+
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                if (dataSnapshot.exists()) {
+                    snk = dataSnapshot.getValue(SneakerCardData.class);
+                    // ...
+
+                    Log.d("tamg",dataSnapshot.getKey()+".jpeg");
 
 
 
-        mSneakerList = new ArrayList<>();
-        mSneakerCardData = new SneakerCardData("Air Max", getString(R.string.description_Sneaker_rose),
-                R.drawable.tenis1);
-        mSneakerList.add(mSneakerCardData);
-        mSneakerCardData = new SneakerCardData("Beluga", getString(R.string.description_Sneaker_carnation),
-                R.drawable.tenis2);
-        mSneakerList.add(mSneakerCardData);
-        mSneakerCardData = new SneakerCardData("Converse x OW", getString(R.string.description_Sneaker_tulip),
-                R.drawable.tenis3);
-        mSneakerList.add(mSneakerCardData);
-        mSneakerCardData = new SneakerCardData("Air Vapormax x OW ", getString(R.string.description_Sneaker_daisy),
-                R.drawable.tenis4);
-        mSneakerList.add(mSneakerCardData);
-        mSneakerCardData = new SneakerCardData("Jordan", getString(R.string.description_Sneaker_sunSneaker),
-                R.drawable.tenis5);
-        mSneakerList.add(mSneakerCardData);
+                    tenis_ref = storageRef.child(dataSnapshot.getKey() +".jpeg");
+
+                    mSneakerCardData = new SneakerCardData("1", snk.getName(), snk.getPrice(), tenis_ref);
+                    mSneakerListDestaques.add(mSneakerCardData);
+
+                    mRecyclerView = (RecyclerView) v.findViewById(R.id.recyclerview);
+
+                    MyAdapter myAdapter = new MyAdapter(getContext(),mSneakerListDestaques);
+                    GridLayoutManager mGridLayoutManager = new GridLayoutManager(v.getContext(), 2);
+                    mRecyclerView.setLayoutManager(mGridLayoutManager);
+                    mRecyclerView.setAdapter(myAdapter);
+                    Log.d("tag","event");
+                }
+                else{Log.d("tag","erro");}
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                // Failed to read value
+                Log.w(TAG, "loadPost:onCancelled", databaseError.toException());
+            }
+        };
 
 
-    }
-    private void openTabPagesActivity(String typeofmessage) {
-        // Exemplo de código para abrir uma activity.
-        Intent intent = new Intent(((TabPages)getActivity()), DetailActivity.class);
-        startActivity(intent);
+        for (int x = 1; x < sneakers_in_page; x++) {
+            link = "tenis" + String.valueOf(x);
 
-        // Depois de abrir a ContactsActivity, não há porque manter a MainActivity aberta.
-        ((TabPages)getActivity()).finish();
+            mDatabase = FirebaseDatabase.getInstance().getReference(link);
+            mDatabase.addValueEventListener(messageListener);
+        }
+
+
+        //mSneakerCardData = new SneakerCardData("Air Max 1/97 'Sean Wotherspoon'", "nome", 900L, tenis2_ref);
+        //mSneakerList.add(mSneakerCardData);
+        //mSneakerCardData = new SneakerCardData("Air Max 1/97 'Sean Wotherspoon'", "nome", 900L, tenis3_ref);
+        //mSneakerList.add(mSneakerCardData);
+        //mSneakerCardData = new SneakerCardData("Air Max 1/97 'Sean Wotherspoon'", "nome", 900L, tenis4_ref);
+        //mSneakerList.add(mSneakerCardData);
+        //mSneakerCardData = new SneakerCardData("Air Max 1/97 'Sean Wotherspoon'", "nome", 900L, tenis5_ref);
+        //mSneakerList.add(mSneakerCardData);
+
+
     }
 }
