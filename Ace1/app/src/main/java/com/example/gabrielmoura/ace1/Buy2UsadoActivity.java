@@ -35,11 +35,12 @@ public class Buy2UsadoActivity extends AppCompatActivity {
             }
         });
 
-        ImageView carrinhoimg = (ImageView) findViewById(R.id.carrinhoimg);
-        carrinhoimg.setOnClickListener(new View.OnClickListener() {
+        ImageButton back = (ImageButton) findViewById(R.id.usadobuy2backbutton);
+
+        back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openComprarPopupActivity();
+                Goback();
             }
         });
 
@@ -49,5 +50,11 @@ public class Buy2UsadoActivity extends AppCompatActivity {
         startActivity(new Intent(this, Buy1UsadoActivity.class)); //O efeito ao ser pressionado do botão (no caso abre a activity)
         finishAffinity(); //Método para matar a activity e não deixa-lá indexada na pilhagem
         return;
+    }
+
+    private void Goback() {
+        Intent intent = new Intent(this, Buy1UsadoActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
