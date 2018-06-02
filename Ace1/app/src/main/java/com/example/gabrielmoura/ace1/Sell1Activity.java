@@ -40,13 +40,13 @@ public class Sell1Activity extends AppCompatActivity {
 
     @Override
     public void onBackPressed(){ //Botão BACK padrão do android
-        startActivity(new Intent(this, sneaker_detail.class)); //O efeito ao ser pressionado do botão (no caso abre a activity)
+        startActivity(new Intent(this, TabPages.class)); //O efeito ao ser pressionado do botão (no caso abre a activity)
         finishAffinity(); //Método para matar a activity e não deixa-lá indexada na pilhagem
         return;
     }
 
     private void Goback() {
-        Intent intent = new Intent(this, sneaker_detail.class);
+        Intent intent = new Intent(this, TabPages.class);
         startActivity(intent);
         finish();
     }
