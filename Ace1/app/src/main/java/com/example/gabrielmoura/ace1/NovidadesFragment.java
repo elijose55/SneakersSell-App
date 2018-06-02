@@ -105,9 +105,9 @@ public class NovidadesFragment extends Fragment {
 
 
 
-                    tenis_ref = storageRef.child(dataSnapshot.getKey() +".jpeg");
+                    //tenis_ref = storageRef.child(dataSnapshot.getKey() +".jpeg");
 
-                    mSneakerCardData = new SneakerCardData("1", snk.getName(), snk.getPrice(), tenis_ref);
+                    mSneakerCardData = new SneakerCardData("1", snk.getName(), snk.getPrice(), dataSnapshot.getKey() +".jpeg");
                     mSneakerListNovidades.add(mSneakerCardData);
 
                     mRecyclerView = (RecyclerView) v.findViewById(R.id.recyclerview);

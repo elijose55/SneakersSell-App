@@ -23,11 +23,11 @@ public class SneakerCardData {
     }
 
     private Long price;
-    private StorageReference sneakerImage;
+    private String sneakerImage;
 
     public SneakerCardData(){}
 
-    public SneakerCardData(String uid, String name, Long price, StorageReference sneakerImage) {
+    public SneakerCardData(String uid, String name, Long price, String sneakerImage) {
         this.uid = uid;
         this.name = name;
         this.price = price;
@@ -47,7 +47,7 @@ public class SneakerCardData {
         return price;
     }
 
-    public StorageReference getSneakerImage() {
+    public String getSneakerImage() {
         Log.d("tst","data");
         return sneakerImage;
     }

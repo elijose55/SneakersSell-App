@@ -11,7 +11,7 @@ tools:context=".TabPages">
         android:id="@+id/toolbar2"
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/colorTwo"
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.Dark"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
@@ -41,7 +41,7 @@ tools:context=".TabPages">
     android:id="@+id/tablayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorThree"
     app:tabSelectedTextColor="@android:color/white"
     app:tabTextColor="@android:color/black">
 

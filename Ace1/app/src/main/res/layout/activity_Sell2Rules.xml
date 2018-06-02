@@ -52,7 +52,7 @@
     </ScrollView>
 
     <CheckBox
-        android:id="@+id/AcceptTermsButton"
+        android:id="@+id/accept_terms_button"
         android:layout_width="193dp"
         android:layout_height="43dp"
         android:layout_marginBottom="16dp"
