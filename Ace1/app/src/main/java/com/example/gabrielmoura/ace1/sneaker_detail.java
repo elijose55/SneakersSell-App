@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -37,6 +38,11 @@ public class sneaker_detail extends AppCompatActivity {
         startActivity(intentbu);
         finish();
     }
+    private void Goback() {
+        Intent intent = new Intent(this, TabPages.class);
+        startActivity(intent);
+        finish();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +55,7 @@ public class sneaker_detail extends AppCompatActivity {
 
         Button comprarusadobtn = (Button) findViewById(R.id.comprarusado);
 
+        ImageButton back = (ImageButton) findViewById(R.id.backbuttonsneakerdetail);
 
         vender.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,9 +75,11 @@ public class sneaker_detail extends AppCompatActivity {
                 openBuy1UsadoActivity();
             }
         });
-
-
-
-
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Goback();
+            }
+        });
     }
 }
