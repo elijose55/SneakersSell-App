@@ -15,6 +15,9 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.firebase.ui.storage.images.FirebaseImageLoader;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+
 import java.util.List;
 
 
@@ -25,6 +28,7 @@ public class MyAdapter extends RecyclerView.Adapter<SneakerViewHolder> {
     ViewPager viewPager;
     private Context mContext;
     private List<SneakerCardData> mSneakerList;
+    private StorageReference tenis_ref;
 
 
     MyAdapter(Context mContext, List<SneakerCardData> mSneakerList) {
@@ -39,24 +43,34 @@ public class MyAdapter extends RecyclerView.Adapter<SneakerViewHolder> {
 
         return new SneakerViewHolder(mView);
     }
-    private void openDetailActivity() {
+    private void openDetailActivity(int position) {
         Intent intent = new Intent(mContext, sneaker_detail.class);
+        intent.putExtra("IMAGE_REFERENCE",mSneakerList.get(position).getSneakerImage());
+        intent.putExtra("NAME_REFERENCE",mSneakerList.get(position).getName());
+        intent.putExtra("PRICE_REFERENCE",mSneakerList.get(position).getPrice());
         mContext.startActivity(intent);
 
 
     }
     @Override
-    public void onBindViewHolder(final SneakerViewHolder holder, int position) {
+    public void onBindViewHolder(final SneakerViewHolder holder, final int position) {
 
         //holder.mImage.setImageResource(mSneakerList.get(position).getSneakerImage());
         holder.mTitleNamee.setText(mSneakerList.get(position).getName());
         holder.mTitlePricee.setText("R$"+String.valueOf((mSneakerList.get(position).getPrice()))+",00");
+        //referencia para o storage
+        FirebaseStorage storage = FirebaseStorage.getInstance();
+
+        final StorageReference storageRef = storage.getReference("images");
+        tenis_ref = storageRef.child(mSneakerList.get(position).getSneakerImage());
 
         Glide.with(mContext)
                 .using(new FirebaseImageLoader())
-                .load(mSneakerList.get(position).getSneakerImage())
+                .load(tenis_ref)
                 .diskCacheStrategy(DiskCacheStrategy.NONE)
                 .skipMemoryCache(true)
+                .thumbnail(Glide.with(mContext).load(R.drawable.loading))
+                .dontAnimate()
                 .fitCenter()
                 .into(holder.mImagee);
         Log.d("tst","Adapter1");
@@ -64,7 +78,7 @@ public class MyAdapter extends RecyclerView.Adapter<SneakerViewHolder> {
             @Override
             public void onClick(View view) {
                 // Do something in response to card click
-                openDetailActivity();
+                openDetailActivity(position);
             }
 
 

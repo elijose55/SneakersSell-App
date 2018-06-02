@@ -82,7 +82,7 @@ public class DestaquesFragment extends Fragment {
         //referencia para o storage
         FirebaseStorage storage = FirebaseStorage.getInstance();
         final StorageReference storageRef = storage.getReference("images");
-        StorageReference imagesRef = storageRef.child("images");
+        //StorageReference imagesRef = storageRef.child("images");
 
         //StorageReference tenis1_ref = storageRef.child("tenis1.jpeg");
         //StorageReference tenis2_ref = storageRef.child("tenis2.jpeg");
@@ -107,9 +107,9 @@ public class DestaquesFragment extends Fragment {
 
 
 
-                    tenis_ref = storageRef.child(dataSnapshot.getKey() +".jpeg");
+                    //tenis_ref = storageRef.child(dataSnapshot.getKey() +".jpeg");
 
-                    mSneakerCardData = new SneakerCardData("1", snk.getName(), snk.getPrice(), tenis_ref);
+                    mSneakerCardData = new SneakerCardData("1", snk.getName(), snk.getPrice(), dataSnapshot.getKey() +".jpeg");
                     mSneakerListDestaques.add(mSneakerCardData);
 
                     mRecyclerView = (RecyclerView) v.findViewById(R.id.recyclerview);
@@ -126,7 +126,7 @@ public class DestaquesFragment extends Fragment {
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                // Failed to read value
+                // FALHOU
                 Log.w(TAG, "loadPost:onCancelled", databaseError.toException());
             }
         };

@@ -24,7 +24,7 @@ public class Sell2RulesActivity extends AppCompatActivity {
 
         // Check which checkbox was clicked
         switch (view.getId()) {
-            case R.id.AcceptTermsButton:
+            case R.id.accept_terms_button:
                 if (checked) {
                     cb = true;
                 }
@@ -39,7 +39,7 @@ public class Sell2RulesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sell2rules);
-        accept = findViewById(R.id.AcceptTermsButton);
+        accept = findViewById(R.id.accept_terms_button);
 
         ImageButton next= (ImageButton) findViewById(R.id.NextButton);
         ImageButton back = (ImageButton) findViewById(R.id.backbuttonsell2);
