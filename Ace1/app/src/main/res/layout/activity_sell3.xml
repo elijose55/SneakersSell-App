@@ -6,17 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".Sell3Activity">
 
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTwo"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    </android.support.v7.widget.Toolbar>
+
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="150dp"
-        android:layout_height="75dp"
-        android:layout_marginBottom="148dp"
+        android:layout_height="70dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="84dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textView3">
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,51 +44,52 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Usado"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Novo"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
         </LinearLayout>
     </ScrollView>
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="160dp"
-        android:layout_height="69dp"
-        android:layout_marginBottom="140dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="112dp"
         android:text="Condição:"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="160dp"
-        android:layout_height="69dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="140dp"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="80dp"
         android:text="Tamanho:"
-        android:textSize="34sp"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ScrollView
+        android:id="@+id/scrollView3"
         android:layout_width="150dp"
-        android:layout_height="127dp"
-        android:layout_marginBottom="40dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="110dp"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        android:layout_height="70dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="88dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.091">
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -84,60 +101,61 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="10.0 / 42 BR"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="9.5 / 41 BR"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="9.0 / 40 BR"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="8.5 / 39 BR"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9.0 / 40 BR"
+                android:textSize="18sp" />
+
             <TextView
                 android:id="@+id/textView13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="8.0 / 38 BR"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
+
         </LinearLayout>
     </ScrollView>
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="51dp"
+        android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="82dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="72dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.714"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="212dp"
-        android:layout_height="28dp"
-        android:layout_marginEnd="61dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="55dp"
+        android:layout_width="210dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginTop="88dp"
         android:text=' Yeezy Boot "Beluga" V2.0'
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
@@ -153,13 +171,15 @@
 
     <ImageButton
         android:id="@+id/backbuttonsell3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:background="@android:color/transparent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintStart_toStartOf="@+id/toolbar2"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2"
         app:srcCompat="@drawable/botao_voltar" />
 
 </android.support.constraint.ConstraintLayout>
