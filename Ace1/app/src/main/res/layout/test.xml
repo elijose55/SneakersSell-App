@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-tools:context=".TabPages">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TabPages">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar2"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="40dp"
         android:background="@color/colorTwo"
-        android:minHeight="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.Dark"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
         <ImageButton
             android:id="@+id/btn_sell"
             style="?android:attr/borderlessButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_gravity="left"
             android:src="@drawable/ic_sell"
             android:text="test" />
@@ -28,40 +27,39 @@ tools:context=".TabPages">
         <ImageButton
             android:id="@+id/btn_profile"
             style="?android:attr/borderlessButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="215dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
             android:src="@drawable/ic_user"
-            android:text="test"
-            android:textAlignment="center" />
+            android:text="test" />
     </android.support.v7.widget.Toolbar>
 
 
-<android.support.design.widget.TabLayout
-    android:id="@+id/tablayout"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/colorThree"
-    app:tabSelectedTextColor="@android:color/white"
-    app:tabTextColor="@android:color/black">
-
-    <android.support.design.widget.TabItem
-        android:id="@+id/tabChats"
-        android:layout_width="wrap_content"
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Novidades" />
+        android:background="@color/colorThree"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextColor="@android:color/black">
 
-    <android.support.design.widget.TabItem
-        android:id="@+id/tabStatus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Em Alta" />
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabChats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Novidades" />
 
-    <android.support.design.widget.TabItem
-        android:id="@+id/tabCalls"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Destaques" />
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Em Alta" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabCalls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destaques" />
 
     </android.support.design.widget.TabLayout>
 
@@ -69,4 +67,4 @@ tools:context=".TabPages">
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-    </LinearLayout>
+</LinearLayout>

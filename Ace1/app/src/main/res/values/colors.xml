@@ -5,4 +5,30 @@
     <color name="colorThree">#777777</color>
     <color name="colorDark">#111111</color>
     <color name="colorLight">#999999</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_scr1">#111111</color>
+    <color name="dot_light_scr2">#111111</color>
+    <color name="dot_light_scr3">#111111</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_scr1">#999999</color>
+    <color name="dot_dark_scr2">#999999</color>
+    <color name="dot_dark_scr3">#999999</color>
+
+    <array name="array_for_active_dot">
+        <item>@color/dot_light_scr1</item>
+        <item>@color/dot_light_scr2</item>
+        <item>@color/dot_light_scr3</item>
+
+    </array>
+
+    <array name="array_for_inactive_dot">
+        <item>@color/dot_dark_scr1</item>
+        <item>@color/dot_dark_scr2</item>
+        <item>@color/dot_dark_scr3</item>
+
+    </array>
+
+
 </resources>

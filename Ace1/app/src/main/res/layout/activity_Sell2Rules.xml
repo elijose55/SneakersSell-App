@@ -6,17 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".Sell2RulesActivity">
 
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTwo"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    </android.support.v7.widget.Toolbar>
+
     <TextView
         android:id="@+id/Apresentation"
         android:layout_width="357dp"
         android:layout_height="52dp"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="20dp"
         android:text="Bem-vindo a melhor plataforma de compra e venda de sneakers do Brasil"
+        android:textAlignment="center"
+        android:textColor="#333333"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
 
     <ImageButton
         android:id="@+id/NextButton"
@@ -35,8 +53,12 @@
         android:layout_height="336dp"
         android:layout_marginBottom="100dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Apresentation">
 
         <TextView
             android:id="@+id/Regras"
@@ -45,35 +67,57 @@
             android:layout_marginBottom="116dp"
             android:layout_marginStart="40dp"
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere faucibus diam. Proin sed turpis vitae elit elementum convallis. Fusce quam justo, ultricies quis urna id, placerat rutrum mauris. Praesent faucibus tempus porttitor. Donec in efficitur nisl. In hac habitasse platea dictumst. Vivamus suscipit justo vitae ornare pharetra. Suspendisse cursus tincidunt felis sed gravida. Donec vehicula ante ut orci tristique euismod. Donec vestibulum, purus ut interdum consectetur, nisl purus lacinia ex, ac convallis elit justo ac mauris. Curabitur magna metus, viverra in nisl vel, finibus sagittis massa. Quisque egestas orci ac maximus iaculis. Cras scelerisque tortor felis, non vestibulum lorem hendrerit sit amet. Suspendisse laoreet sit amet mi eu condimentum. Suspendisse iaculis cursus turpis, et suscipit augue sollicitudin quis.  Proin posuere sem vel nulla iaculis, at blandit ante sodales. Suspendisse in tincidunt enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla varius eros venenatis, sollicitudin ipsum sit amet, vehicula mauris. Curabitur nec ante vitae quam vehicula auctor. Duis quis vehicula quam. Nullam ligula tellus, pulvinar eget augue vel, suscipit efficitur sem. Sed vitae condimentum nisl. Donec urna augue, vehicula in enim sit amet, lobortis lacinia sapien. Sed vel lorem non risus accumsan feugiat dictum a dolor.  Phasellus eget justo accumsan, iaculis magna sit amet, porta nisi. Phasellus condimentum pulvinar ullamcorper. Cras imperdiet tempus mauris at ornare. Duis viverra a nisi id pretium. In ullamcorper sem dolor, in dignissim mauris condimentum nec. Etiam volutpat eleifend eros in molestie. Pellentesque eu risus dapibus, congue nisi at, congue est. Etiam egestas lobortis libero, sit amet pharetra elit sollicitudin a. Cras id lectus arcu.  Nunc suscipit porttitor nisi, sit amet cursus quam consectetur eu. Donec non libero mollis, fermentum quam molestie, consectetur lectus. Quisque posuere eros eget sagittis malesuada. Duis lobortis cursus ante, in feugiat mi vulputate et. Praesent viverra, lectus vitae pulvinar condimentum, nibh purus malesuada lorem, at tincidunt libero tellus id enim. Quisque id rutrum ligula. Etiam ac gravida neque, sit amet faucibus metus. Sed non neque blandit, volutpat risus nec, ultricies lectus. Morbi viverra aliquam fermentum. Vivamus non libero ex.  Maecenas nec lobortis justo. Nam gravida sodales tempor. Nunc varius, massa id posuere consequat, odio purus ullamcorper nisl, sed pharetra diam velit non dolor. Vivamus sed aliquam est. Donec interdum tincidunt nulla in pretium. Vivamus dapibus enim sit amet vehicula viverra. Vivamus bibendum sapien nibh, at varius dui rutrum ac. Mauris efficitur malesuada ante eu rhoncus. Sed eget metus at tellus hendrerit elementum id id lacus. Integer volutpat mi vitae arcu pellentesque, id sodales dui scelerisque. Donec tempor eu risus vitae aliquam. Morbi eu ante ut nibh porta faucibus nec at dui. Praesent ultricies turpis in felis venenatis, eget laoreet tortor ullamcorper. Donec ac sem placerat, rhoncus ipsum sit amet, accumsan magna.  Nulla porttitor metus nulla, a scelerisque dolor iaculis id. Quisque ac nibh consequat, commodo velit ut, aliquet dolor. Duis eu lectus ultrices, congue urna at, interdum nunc. Suspendisse sit amet ipsum mollis, placerat mauris vitae, rhoncus massa. Duis sodales ut orci a accumsan. Sed vel condimentum justo. Nullam scelerisque odio sit amet dapibus semper. Maecenas id imperdiet odio, nec consectetur dolor. Suspendisse potenti. Nulla varius mauris et nunc efficitur feugiat. Aliquam malesuada nisi a iaculis mattis.  Nullam at mauris interdum, hendrerit nunc vitae, aliquam sapien. Vivamus sit amet cursus quam, in volutpat lectus. Curabitur vitae massa in lacus auctor mattis. Etiam ullamcorper sit amet sem eget aliquam. Vivamus justo quam, tincidunt eu semper id, hendrerit vestibulum turpis. Nam et leo a nunc iaculis fermentum convallis sed metus. Duis finibus fermentum neque id suscipit."
+            android:textColor="#333333"
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
     </ScrollView>
 
+    <ImageButton
+        android:id="@+id/backbuttonsell2"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintStart_toStartOf="@+id/toolbar2"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2"
+        app:srcCompat="@drawable/botao_voltar" />
+
     <CheckBox
         android:id="@+id/accept_terms_button"
         android:layout_width="193dp"
         android:layout_height="43dp"
-        android:layout_marginBottom="16dp"
         android:layout_marginEnd="100dp"
         android:layout_marginStart="100dp"
         android:checked="false"
         android:onClick="onCheckboxClicked"
         android:text="Eu li e aceito os termos"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="#333333"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Scroll" />
 
-    <ImageButton
-        android:id="@+id/backbuttonsell2"
+    <TextView
+        android:id="@+id/textView33"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@android:color/transparent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Termos"
+        android:textColor="#999999"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/botao_voltar" />
+        app:layout_constraintTop_toTopOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>

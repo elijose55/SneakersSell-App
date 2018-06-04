@@ -6,50 +6,71 @@
     android:layout_height="match_parent"
     tools:context=".Sell1Activity">
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="65dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="212dp"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTwo"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView27"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
         app:srcCompat="@drawable/name_icon" />
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="256dp"
-        android:layout_height="197dp"
+        android:layout_width="250dp"
+        android:layout_height="180dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
         app:srcCompat="@drawable/unknown" />
 
     <ImageView
         android:id="@+id/imageView13"
-        android:layout_width="63dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="14dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView28"
+        app:layout_constraintHorizontal_bias="0.842"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
         app:srcCompat="@drawable/location_icon" />
 
     <ImageButton
         android:id="@+id/userinfo_back_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:background="@android:color/transparent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintStart_toStartOf="@+id/toolbar2"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2"
         app:srcCompat="@drawable/botao_voltar" />
 
     <ImageButton
         android:id="@+id/Edit_profile_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
         android:layout_marginEnd="10dp"
         android:layout_marginTop="10dp"
         android:background="@android:color/transparent"
@@ -61,9 +82,10 @@
         android:id="@+id/textView27"
         android:layout_width="217dp"
         android:layout_height="52dp"
-        android:layout_marginEnd="93dp"
-        android:layout_marginTop="33dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="32dp"
         android:text="Kendrick Lamar"
+        android:textAlignment="center"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView8" />
@@ -72,9 +94,10 @@
         android:id="@+id/textView28"
         android:layout_width="214dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginTop="27dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="40dp"
         android:text="Faria Lima 3477"
+        android:textAlignment="center"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView27" />
@@ -83,13 +106,13 @@
         android:id="@+id/textView29"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="63dp"
-        android:layout_marginEnd="92dp"
-        android:layout_marginStart="92dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
         android:text="Número de vendas: 20"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
 </android.support.constraint.ConstraintLayout>
