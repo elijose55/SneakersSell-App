@@ -41,7 +41,7 @@ public class Sell2RulesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sell2rules);
         accept = findViewById(R.id.accept_terms_button);
 
-        ImageButton next= (ImageButton) findViewById(R.id.NextButton);
+        ImageButton next= (ImageButton) findViewById(R.id.next_button);
         ImageButton back = (ImageButton) findViewById(R.id.backbuttonsell2);
 
         next.setOnClickListener(new View.OnClickListener() {

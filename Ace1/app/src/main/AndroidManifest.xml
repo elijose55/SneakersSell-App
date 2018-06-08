@@ -18,6 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".sneaker_detail" />
+        <activity android:name=".SearchActivity" />
         <activity android:name=".Sell2RulesActivity" />
         <activity android:name=".Sell3Activity" />
         <activity android:name=".Sell4ObservationsActivity" />
