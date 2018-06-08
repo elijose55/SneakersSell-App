@@ -8,12 +8,24 @@
     tools:context="com.example.gabrielmoura.ace1.sneaker_detail">
 
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTwo"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
     <Button
         android:id="@+id/comprarusado"
         android:layout_width="175dp"
-        android:layout_height="64dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:text="Usado"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -27,10 +39,11 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:text='Yeezy Boost "Beluga" V2.0'
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textSize="24sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,10 +51,10 @@
 
     <Button
         android:id="@+id/comprarnovo"
-        android:layout_width="176dp"
-        android:layout_height="64dp"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:text="Novo"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -59,7 +72,7 @@
     <TextView
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="15dp"
         android:layout_marginEnd="40dp"
         android:layout_marginTop="1dp"
         android:text="A partir de R$1500"
@@ -78,23 +91,23 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="317dp"
-        android:layout_height="220dp"
+        android:layout_width="280dp"
+        android:layout_height="130dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
 
     <TextView
         android:id="@+id/textView24"
         android:layout_width="300dp"
-        android:layout_height="41dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="44dp"
-        android:text="Lorem iPsium Xx Descrição............."
+        android:layout_height="85dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a vestibulum quam. Aliquam at ex finibus, ultricies sapien aliquet, varius quam. In ut fringilla mi, et auctor dolor. Cras malesuada."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,13 +115,15 @@
 
     <Button
         android:id="@+id/querovender"
-        android:layout_width="172dp"
-        android:layout_height="51dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="106dp"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="132dp"
         android:text="Vender"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
     <ImageButton
         android:id="@+id/backbuttonsneakerdetail"

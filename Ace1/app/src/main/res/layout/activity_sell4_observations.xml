@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".Sell4ObservationsActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTwo"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    </android.support.v7.widget.Toolbar>
+
+
     <EditText
         android:id="@+id/editText24"
         android:layout_width="60dp"
@@ -108,84 +123,81 @@
         android:id="@+id/Switch1"
         android:layout_width="155dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:text="Dano Palmilha E"
-        app:layout_constraintBottom_toTopOf="@+id/Switch7"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Switch6" />
 
     <Switch
         android:id="@+id/Switch2"
         android:layout_width="155dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
+        android:layout_height="25dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:text="Dano na Caixa"
-        app:layout_constraintBottom_toTopOf="@+id/Switch5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <Switch
         android:id="@+id/Switch3"
         android:layout_width="155dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
+        android:layout_height="25dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:text="Mancha Solado D"
-        app:layout_constraintBottom_toTopOf="@+id/Switch4"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Switch5" />
 
     <Switch
         android:id="@+id/Switch4"
         android:layout_width="155dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
+        android:layout_height="27dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:text="Mancha Solado E"
-        app:layout_constraintBottom_toTopOf="@+id/Switch6"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Switch3" />
 
     <Switch
         android:id="@+id/Switch5"
         android:layout_width="155dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
+        android:layout_height="25dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:text="Possui Caixa"
-        app:layout_constraintBottom_toTopOf="@+id/Switch3"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Switch2" />
 
     <Switch
         android:id="@+id/Switch6"
         android:layout_width="155dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:text="Dano Palmilha E"
-        app:layout_constraintBottom_toTopOf="@+id/Switch1"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Switch4" />
 
     <Switch
         android:id="@+id/Switch7"
         android:layout_width="155dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:text="Mancha Exterior D"
-        app:layout_constraintBottom_toTopOf="@+id/Switch8"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Switch1" />
 
     <Switch
         android:id="@+id/Switch8"
         android:layout_width="155dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="104dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:text="Mancha Exterior E"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Switch7" />
 
     <EditText
         android:id="@+id/editText17"
@@ -205,15 +217,12 @@
         android:id="@+id/imageView4"
         android:layout_width="246dp"
         android:layout_height="123dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.089999974"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
         app:srcCompat="@drawable/slide1" />
 
     <ImageButton
@@ -229,13 +238,14 @@
 
     <ImageButton
         android:id="@+id/backbuttonsell4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:background="@android:color/transparent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintStart_toStartOf="@+id/toolbar2"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2"
         app:srcCompat="@drawable/botao_voltar" />
-
 </android.support.constraint.ConstraintLayout>
