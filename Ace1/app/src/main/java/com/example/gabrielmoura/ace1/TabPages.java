@@ -12,13 +12,21 @@ import android.view.View;
 import android.widget.ImageButton;
 
 
+
+
 public class TabPages extends AppCompatActivity {
 
 
     private static final String TAG = "TabPages";
     private static final int ACTIVITY_NUM = 0;
 
+
+
+
     private Context mContext = TabPages.this;
+
+    Bundle bundle = new Bundle();
+
 
     private void setupViewPager(){
         SectionsPagerAdapter adapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -38,10 +46,18 @@ public class TabPages extends AppCompatActivity {
 
         ImageButton btnSell = (ImageButton) findViewById(R.id.btn_sell);
         ImageButton btnProfile = (ImageButton) findViewById(R.id.btn_profile);
+        ImageButton btnSearch = (ImageButton) findViewById(R.id.btn_search);
 
         btnProfile.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 openUserinfoActivity();
+                // Do something in response to button profile click
+            }
+        });
+
+        btnSearch.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                openSearchActivity();
                 // Do something in response to button profile click
             }
         });
@@ -60,6 +76,14 @@ public class TabPages extends AppCompatActivity {
         setContentView(R.layout.test);
         Log.d(TAG, "onCreate: starting.");
 
+
+
+
+
+
+
+
+
         setupViewPager();
     }
 
@@ -73,6 +97,12 @@ public class TabPages extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+    private void openSearchActivity() {
+        Intent intent = new Intent(this, SearchActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
 
 }
 

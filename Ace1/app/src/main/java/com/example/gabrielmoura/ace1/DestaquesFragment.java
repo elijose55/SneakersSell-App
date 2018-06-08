@@ -31,17 +31,16 @@ public class DestaquesFragment extends Fragment {
 
     private Toolbar mToolbar;
     private RecyclerView mRecyclerView;
-    private List<SneakerCardData> mSneakerListDestaques;
+    private List<SneakerCardData> mSneakerList;
     private List<DatabaseReference> mDatabaseReferenceList = new ArrayList<>();
     private SneakerCardData mSneakerCardData;
     private SneakerCardData snk = null;
     private View v;
     private int sneakers_in_page = 11;
     private String link = null;
-    private StorageReference tenis_ref;
 
     public DestaquesFragment() {
-        mSneakerListDestaques = new ArrayList<>();
+        mSneakerList = new ArrayList<>();
     }
 
 
@@ -60,7 +59,7 @@ public class DestaquesFragment extends Fragment {
 
         mRecyclerView = (RecyclerView) v.findViewById(R.id.recyclerview);
 
-        MyAdapter myAdapter = new MyAdapter(getContext(),mSneakerListDestaques);
+        MyAdapter myAdapter = new MyAdapter(getContext(),mSneakerList);
         GridLayoutManager mGridLayoutManager = new GridLayoutManager(v.getContext(), 2);
         mRecyclerView.setLayoutManager(mGridLayoutManager);
         mRecyclerView.setAdapter(myAdapter);
@@ -110,11 +109,11 @@ public class DestaquesFragment extends Fragment {
                     //tenis_ref = storageRef.child(dataSnapshot.getKey() +".jpeg");
 
                     mSneakerCardData = new SneakerCardData("1", snk.getName(), snk.getPrice(), dataSnapshot.getKey() +".jpeg");
-                    mSneakerListDestaques.add(mSneakerCardData);
+                    mSneakerList.add(mSneakerCardData);
 
                     mRecyclerView = (RecyclerView) v.findViewById(R.id.recyclerview);
 
-                    MyAdapter myAdapter = new MyAdapter(getContext(),mSneakerListDestaques);
+                    MyAdapter myAdapter = new MyAdapter(getContext(),mSneakerList);
                     GridLayoutManager mGridLayoutManager = new GridLayoutManager(v.getContext(), 2);
                     mRecyclerView.setLayoutManager(mGridLayoutManager);
                     mRecyclerView.setAdapter(myAdapter);
@@ -123,6 +122,7 @@ public class DestaquesFragment extends Fragment {
                 else{Log.d("tag","erro");}
 
             }
+
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
