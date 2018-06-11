@@ -128,7 +128,7 @@
 
     <Switch
         android:id="@+id/Switch1"
-        android:layout_width="155dp"
+        android:layout_width="165dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="15dp"
@@ -138,7 +138,7 @@
 
     <Switch
         android:id="@+id/Switch2"
-        android:layout_width="155dp"
+        android:layout_width="165dp"
         android:layout_height="25dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
@@ -148,7 +148,7 @@
 
     <Switch
         android:id="@+id/Switch3"
-        android:layout_width="155dp"
+        android:layout_width="165dp"
         android:layout_height="25dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="15dp"
@@ -158,7 +158,7 @@
 
     <Switch
         android:id="@+id/Switch4"
-        android:layout_width="155dp"
+        android:layout_width="165dp"
         android:layout_height="27dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="15dp"
@@ -168,8 +168,8 @@
 
     <Switch
         android:id="@+id/Switch5"
-        android:layout_width="155dp"
-        android:layout_height="25dp"
+        android:layout_width="165dp"
+        android:layout_height="32dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="15dp"
         android:text="Possui Caixa"
@@ -178,7 +178,7 @@
 
     <Switch
         android:id="@+id/Switch6"
-        android:layout_width="155dp"
+        android:layout_width="165dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="15dp"
@@ -188,7 +188,7 @@
 
     <Switch
         android:id="@+id/Switch7"
-        android:layout_width="155dp"
+        android:layout_width="165dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="15dp"
@@ -198,7 +198,7 @@
 
     <Switch
         android:id="@+id/Switch8"
-        android:layout_width="155dp"
+        android:layout_width="165dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="15dp"
