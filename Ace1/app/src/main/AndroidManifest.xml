@@ -29,9 +29,9 @@
         <activity android:name=".Sell1Activity" />
         <activity android:name=".TabPages" />
         <activity android:name=".UserinfoActivity" />
-        <activity android:name=".Buy1NovoActivity" />
+        <activity android:name=".Buy1Activity" />
         <activity android:name=".Buy1UsadoActivity" />
-        <activity android:name=".Buy2UsadoActivity" />
+        <activity android:name=".Buy2Activity" />
         <activity android:name=".ComprarPopupActivity"
             android:theme="@style/Theme.AppCompat.Light.Dialog"
             />
