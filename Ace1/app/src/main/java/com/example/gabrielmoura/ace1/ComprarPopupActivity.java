@@ -10,7 +10,7 @@ import android.widget.ImageView;
 
 public class ComprarPopupActivity extends AppCompatActivity {
 
-    private  void openBuy2UsadoActivity() {
+    private  void openBuy2Activity() {
         Intent intentbn22 = new Intent(this, Buy2Activity.class);
         startActivity(intentbn22);
         finish();
@@ -21,16 +21,30 @@ public class ComprarPopupActivity extends AppCompatActivity {
         finish();
     }
 
+    //private void Goback(String image, String name, Long price_new) {
+    //    Intent intent = new Intent(this, Buy2Activity.class);
+    //    intent.putExtra("IMAGE_REFERENCE",image);
+    //    intent.putExtra("NAME_REFERENCE",name);
+    //    intent.putExtra("PRICE_REFERENCE",price_new);
+    //    startActivity(intent);
+    //    finish();
+    //}
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.comprarpopup);
 
+        //final String image = getIntent().getStringExtra("IMAGE_REFERENCE");
+        //final String name = getIntent().getStringExtra("NAME_REFERENCE");
+        //final Long price_new = getIntent().getLongExtra("PRICE_REFERENCE",0);
+
         ImageView fecharpopupimg = (ImageView) findViewById(R.id.sairpopup);
+
         fecharpopupimg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openBuy2UsadoActivity();
+                openBuy2Activity();
             }
         });
 
@@ -54,12 +68,11 @@ public class ComprarPopupActivity extends AppCompatActivity {
 
 
     }
-    public void onBackPressed(){ //Botão BACK padrão do android
-        startActivity(new Intent(this, Buy2Activity.class)); //O efeito ao ser pressionado do botão (no caso abre a activity)
-        finishAffinity(); //Método para matar a activity e não deixa-lá indexada na pilhagem
-        return;
-    }
-
+    //public void onBackPressed(){ //Botão BACK padrão do android
+    //    startActivity(new Intent(this, Buy2Activity.class)); //O efeito ao ser pressionado do botão (no caso abre a activity)
+    //    finishAffinity(); //Método para matar a activity e não deixa-lá indexada na pilhagem
+    //   return;
+    //}
 
 
 }
