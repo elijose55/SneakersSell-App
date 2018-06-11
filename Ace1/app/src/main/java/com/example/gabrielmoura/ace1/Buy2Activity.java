@@ -78,11 +78,11 @@ public class Buy2Activity extends AppCompatActivity {
 
     }
 
-    public void onBackPressed(){ //Botão BACK padrão do android
-        startActivity(new Intent(this, Buy1UsadoActivity.class)); //O efeito ao ser pressionado do botão (no caso abre a activity)
-        finishAffinity(); //Método para matar a activity e não deixa-lá indexada na pilhagem
-        return;
-    }
+    //public void onBackPressed(){ //Botão BACK padrão do android
+    //    startActivity(new Intent(this, Buy1Activity.class)); //O efeito ao ser pressionado do botão (no caso abre a activity)
+    //    finishAffinity(); //Método para matar a activity e não deixa-lá indexada na pilhagem
+    //    return;
+    //}
 
     private void Goback(String image, String name, Long price_new) {
         Intent intent = new Intent(this, Buy1Activity.class);
