@@ -22,49 +22,33 @@
         android:id="@+id/imageView7"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toStartOf="@+id/textView27"
-        app:layout_constraintHorizontal_bias="0.914"
+        android:layout_marginBottom="215dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8"
         app:srcCompat="@drawable/name_icon" />
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="250dp"
+        android:layout_width="wrap_content"
         android:layout_height="180dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2"
         app:srcCompat="@drawable/unknown" />
 
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toStartOf="@+id/textView28"
-        app:layout_constraintHorizontal_bias="0.842"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:srcCompat="@drawable/location_icon" />
-
     <ImageButton
         android:id="@+id/userinfo_back_button"
         android:layout_width="40dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
         app:layout_constraintStart_toStartOf="@+id/toolbar2"
-        app:layout_constraintTop_toTopOf="@+id/toolbar2"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/botao_voltar" />
 
     <ImageButton
@@ -80,39 +64,54 @@
 
     <TextView
         android:id="@+id/textView27"
-        android:layout_width="217dp"
+        android:layout_width="wrap_content"
         android:layout_height="52dp"
+        android:layout_marginBottom="210dp"
         android:layout_marginEnd="64dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="40dp"
         android:text="Kendrick Lamar"
         android:textAlignment="center"
         android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toEndOf="@+id/imageView7" />
 
     <TextView
         android:id="@+id/textView28"
-        android:layout_width="214dp"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginTop="40dp"
-        android:text="Faria Lima 3477"
+        android:layout_marginBottom="125dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginStart="21dp"
+        android:text="kendrick99@gmail.com"
         android:textAlignment="center"
         android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+        app:layout_constraintStart_toEndOf="@+id/imageView18" />
 
     <TextView
         android:id="@+id/textView29"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginBottom="35dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
         android:text="Número de vendas: 20"
         android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="60dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="125dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+        app:srcCompat="@drawable/emailicon" />
 
 </android.support.constraint.ConstraintLayout>
