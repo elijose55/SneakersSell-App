@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorOne">#333333</color>
-    <color name="colorTwo">#555555</color>
+    <color name="colorTwo">#000000</color>
     <color name="colorThree">#777777</color>
     <color name="colorDark">#111111</color>
-    <color name="colorLight">#999999</color>
+    <color name="colorLight">#ffffff</color>
 
     <!-- dots active colors -->
     <color name="dot_light_scr1">#111111</color>

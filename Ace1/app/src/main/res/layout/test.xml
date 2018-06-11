@@ -18,30 +18,33 @@
         <ImageButton
             android:id="@+id/btn_sell"
             style="?android:attr/borderlessButtonStyle"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_gravity="left"
-            android:src="@drawable/ic_sell"
+            android:scaleType="fitStart"
+            android:src="@drawable/sell"
             android:text="test" />
 
         <ImageButton
             android:id="@+id/btn_profile"
             style="?android:attr/borderlessButtonStyle"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginLeft="40dp"
-            android:src="@drawable/ic_user"
+            android:scaleType="fitStart"
+            android:src="@drawable/profile"
             android:text="test"
             android:textAlignment="center" />
 
         <ImageButton
             android:id="@+id/btn_search"
             style="?android:attr/borderlessButtonStyle"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_gravity="right"
             android:layout_marginRight="10dp"
-            android:src="@drawable/ic_search"
+            android:scaleType="fitStart"
+            android:src="@drawable/search"
             android:text="test" />
     </android.support.v7.widget.Toolbar>
 
