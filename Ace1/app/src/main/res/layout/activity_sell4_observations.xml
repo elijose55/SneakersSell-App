@@ -214,6 +214,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
         android:ems="10"
+        android:fontFamily="casual"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="@+id/Switch2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -234,11 +235,12 @@
 
     <ImageButton
         android:id="@+id/nextbuttonsell4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginBottom="10dp"
         android:layout_marginEnd="10dp"
         android:background="@android:color/transparent"
+        android:scaleType="fitStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/botao_frente" />
@@ -246,11 +248,12 @@
     <ImageButton
         android:id="@+id/backbuttonsell4"
         android:layout_width="40dp"
-        android:layout_height="0dp"
+        android:layout_height="40dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/transparent"
+        android:scaleType="fitStart"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
         app:layout_constraintStart_toStartOf="@+id/toolbar2"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
