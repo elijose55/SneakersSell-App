@@ -39,4 +39,15 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="estado">
+        <item>Novo</item>
+        <item>Usado</item>
+    </string-array>
+    <string-array name="tamanho">
+        <item>11.0 / 43 BR</item>
+        <item>10.0 / 42 BR</item>
+        <item>9.5 / 41 BR</item>
+        <item>9.0 / 40 BR</item>
+        <item>8.5 / 39 BR</item>
+    </string-array>
 </resources>

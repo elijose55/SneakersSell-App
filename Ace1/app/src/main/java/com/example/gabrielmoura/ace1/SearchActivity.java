@@ -2,6 +2,7 @@ package com.example.gabrielmoura.ace1;
 
 
 import android.content.Intent;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 
@@ -52,6 +54,11 @@ public class SearchActivity extends AppCompatActivity {
 
 
     }
+    public void onBackPressed(){ //Botão BACK padrão do android
+        startActivity(new Intent(this, TabPages.class)); //O efeito ao ser pressionado do botão (no caso abre a activity)
+        finishAffinity(); //Método para matar a activity e não deixa-lá indexada na pilhagem
+        return;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +67,7 @@ public class SearchActivity extends AppCompatActivity {
         final ListView list = (ListView) findViewById(R.id.theList);
         EditText theFilter = (EditText) findViewById(R.id.searchFilter);
         Log.d(TAG, "onCreate: Started.");
+        ImageButton back = (ImageButton) findViewById(R.id.searchbackbutton);
 
 
 
@@ -69,6 +77,12 @@ public class SearchActivity extends AppCompatActivity {
 
         DatabaseReference mDatabase;
         //referencia para o database
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Goback();
+            }
+        });
 
         ValueEventListener messageListener = new ValueEventListener() {
 
@@ -139,5 +153,10 @@ public class SearchActivity extends AppCompatActivity {
             }
         });
 
+    }
+    private void Goback() {
+        Intent intent = new Intent(this, TabPages.class);
+        startActivity(intent);
+        finish();
     }
 }
