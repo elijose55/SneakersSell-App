@@ -5,15 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 
-import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -29,7 +25,6 @@ public class sneaker_detail extends AppCompatActivity {
 
 
 
-
     private void openSell1Activity() {
         Intent intent1 = new Intent(this, Sell1Activity.class);
         startActivity(intent1);
@@ -37,14 +32,28 @@ public class sneaker_detail extends AppCompatActivity {
     }
 
     private  void openBuy1NovoActivity() {
-        Intent intentbn = new Intent(this, Buy1UsadoActivity.class);
+        final String image = getIntent().getStringExtra("IMAGE_REFERENCE");
+        final String name = getIntent().getStringExtra("NAME_REFERENCE");
+        final Long price_new = getIntent().getLongExtra("PRICE_REFERENCE",0);
+
+        Intent intentbn = new Intent(this, Buy1Activity.class);
+        intentbn.putExtra("IMAGE_REFERENCE",image);
+        intentbn.putExtra("NAME_REFERENCE",name);
+        intentbn.putExtra("PRICE_REFERENCE",price_new);
         startActivity(intentbn);
         finish();
     }
 
     private  void openBuy1UsadoActivity() {
-        Intent intentbu = new Intent(this, Buy1UsadoActivity.class);
-        startActivity(intentbu);
+        final String image = getIntent().getStringExtra("IMAGE_REFERENCE");
+        final String name = getIntent().getStringExtra("NAME_REFERENCE");
+        final Long price_new = getIntent().getLongExtra("PRICE_REFERENCE",0);
+
+        Intent intentbn = new Intent(this, Buy1Activity.class);
+        intentbn.putExtra("IMAGE_REFERENCE",image);
+        intentbn.putExtra("NAME_REFERENCE",name);
+        intentbn.putExtra("PRICE_REFERENCE",price_new);
+        startActivity(intentbn);
         finish();
     }
     private void Goback() {
@@ -57,6 +66,10 @@ public class sneaker_detail extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sneaker_detail);
+
+        final String image = getIntent().getStringExtra("IMAGE_REFERENCE");
+        final String name = getIntent().getStringExtra("NAME_REFERENCE");
+        final Long price_new = getIntent().getLongExtra("PRICE_REFERENCE",0);
 
         ImageView mImage = (ImageView) findViewById(R.id.imageView3);
 
@@ -76,9 +89,7 @@ public class sneaker_detail extends AppCompatActivity {
 
 
 
-        String image = getIntent().getStringExtra("IMAGE_REFERENCE");
-        String name = getIntent().getStringExtra("NAME_REFERENCE");
-        Long price_new = getIntent().getLongExtra("PRICE_REFERENCE",0);
+
 
         mTextName.setText(name);
         mTextPriceNew.setText("A partir de R$"+ String.valueOf(price_new));
